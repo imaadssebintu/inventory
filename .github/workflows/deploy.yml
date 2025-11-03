@@ -20,7 +20,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           source: "inventory.tar.gz"
           target: "~/"
 
@@ -29,20 +29,20 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: |
             # Stop and remove old container & volumes
             docker rm -f inventory || true
             docker volume prune -f || true
 
             # Remove old folder & recreate
-            rm -rf ~/inventory
-            mkdir -p ~/inventory
+            rm -rf ~/docker/inventory/inventory
+            mkdir -p ~/docker/inventory/inventory
 
             # Extract new code
-            tar -xzf ~/inventory.tar.gz -C ~/inventory
+            tar -xzf ~/inventory.tar.gz -C ~/docker/inventory/inventory
             rm ~/inventory.tar.gz
 
             # Build & start fresh containers
-            cd ~/inventory
+            cd ~/docker/inventory/inventory
             docker compose up -d --build
