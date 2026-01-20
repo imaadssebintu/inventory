@@ -6,8 +6,8 @@
 <!-- ApexCharts is now loaded globally in base.html -->
 <script>
     // Simple ready check for ApexCharts
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
             if (typeof ApexCharts !== 'undefined') {
                 console.log('✅ ApexCharts is ready!');
                 console.log('📊 ApexCharts version:', ApexCharts.version || 'unknown');
@@ -31,7 +31,8 @@
                     <p class="text-green-100 text-xs">Revenue & performance analysis</p>
                 </div>
             </div>
-            <a href="/reports" class="inline-flex items-center px-3 py-1.5 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded text-sm font-medium transition-all duration-200">
+            <a href="/reports"
+                class="inline-flex items-center px-3 py-1.5 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded text-sm font-medium transition-all duration-200">
                 <i class="fas fa-arrow-left mr-1"></i>Back
             </a>
         </div>
@@ -45,14 +46,19 @@
             <div class="flex items-center gap-3">
                 <div class="flex items-center">
                     <i class="fas fa-calendar-day text-green-500 text-sm mr-2"></i>
-                    <input type="date" id="fromDate" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500" onchange="onDateChange()">
+                    <input type="date" id="fromDate"
+                        class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
+                        onchange="onDateChange()">
                 </div>
                 <span class="text-gray-400">to</span>
                 <div class="flex items-center">
                     <i class="fas fa-calendar-check text-green-500 text-sm mr-2"></i>
-                    <input type="date" id="toDate" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500" onchange="onDateChange()">
+                    <input type="date" id="toDate"
+                        class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
+                        onchange="onDateChange()">
                 </div>
-                <select id="quickSelect" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500">
+                <select id="quickSelect"
+                    class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-500">
                     <option value="">Custom Range</option>
                     <option value="today">Today</option>
                     <option value="yesterday">Yesterday</option>
@@ -68,11 +74,13 @@
     <!-- Sales Summary Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
         <!-- Total Revenue Card -->
-        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+        <div
+            class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="p-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="w-8 h-8 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center shadow-md">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center shadow-md">
                             <i class="fas fa-money-bill-wave text-white text-xs"></i>
                         </div>
                     </div>
@@ -101,11 +109,13 @@
         </div>
 
         <!-- Total Profit Card -->
-        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+        <div
+            class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="p-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
                             <i class="fas fa-chart-pie text-white text-xs"></i>
                         </div>
                     </div>
@@ -134,11 +144,13 @@
         </div>
 
         <!-- Total Orders Card -->
-        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+        <div
+            class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="p-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="w-8 h-8 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center shadow-md">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center shadow-md">
                             <i class="fas fa-shopping-bag text-white text-xs"></i>
                         </div>
                     </div>
@@ -166,11 +178,13 @@
         </div>
 
         <!-- Average Order Card -->
-        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+        <div
+            class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <div class="p-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="w-8 h-8 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
                             <i class="fas fa-chart-line text-white text-xs"></i>
                         </div>
                     </div>
@@ -199,11 +213,13 @@
         </div>
 
         <!-- Growth Rate Card -->
-        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" title="Revenue growth compared to the previous period of the same duration">
+        <div class="bg-white overflow-hidden shadow-md rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            title="Revenue growth compared to the previous period of the same duration">
             <div class="p-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-500 rounded-lg flex items-center justify-center shadow-md">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-500 rounded-lg flex items-center justify-center shadow-md">
                             <i class="fas fa-trending-up text-white text-xs"></i>
                         </div>
                     </div>
@@ -234,24 +250,30 @@
     <!-- Enhanced Charts Section -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <!-- Sales Trend Chart -->
-        <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+        <div
+            class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
             <div class="px-6 py-4 border-b border-gray-100">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
-                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-3">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-chart-line text-white text-sm"></i>
                         </div>
                         <h3 class="text-lg font-bold text-gray-900">Sales Trend</h3>
                     </div>
-                    <span class="text-xs text-gray-500 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full font-medium">Daily View</span>
+                    <span
+                        class="text-xs text-gray-500 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full font-medium">Daily
+                        View</span>
                 </div>
             </div>
             <div class="p-6">
                 <div class="h-72 relative">
                     <div id="salesTrendChart" class="w-full h-full"></div>
-                    <div id="salesTrendPlaceholder" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 rounded border-2 border-dashed border-gray-200">
+                    <div id="salesTrendPlaceholder"
+                        class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 rounded border-2 border-dashed border-gray-200">
                         <div class="text-center">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-chart-line text-blue-500 text-lg"></i>
                             </div>
                             <p class="text-gray-600 font-medium mb-1 text-sm">Sales Trend Chart</p>
@@ -263,24 +285,30 @@
         </div>
 
         <!-- Top Products Chart -->
-        <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+        <div
+            class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
             <div class="px-6 py-4 border-b border-gray-100">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
-                        <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-chart-pie text-white text-sm"></i>
                         </div>
                         <h3 class="text-lg font-bold text-gray-900">Top Products</h3>
                     </div>
-                    <span class="text-xs text-gray-500 bg-purple-50 text-purple-700 px-3 py-1.5 rounded-full font-medium">Top 10</span>
+                    <span
+                        class="text-xs text-gray-500 bg-purple-50 text-purple-700 px-3 py-1.5 rounded-full font-medium">Top
+                        10</span>
                 </div>
             </div>
             <div class="p-6">
                 <div class="h-72 relative">
                     <div id="topProductsChart" class="w-full h-full"></div>
-                    <div id="topProductsPlaceholder" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-purple-50 rounded border-2 border-dashed border-gray-200">
+                    <div id="topProductsPlaceholder"
+                        class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-purple-50 rounded border-2 border-dashed border-gray-200">
                         <div class="text-center">
-                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div
+                                class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                 <i class="fas fa-chart-pie text-purple-500 text-lg"></i>
                             </div>
                             <p class="text-gray-600 font-medium mb-1 text-sm">Top Products Chart</p>
@@ -300,7 +328,8 @@
                     <i class="fas fa-table text-green-600 text-sm mr-2"></i>
                     <h3 class="text-sm font-semibold text-gray-900">Sales Details</h3>
                 </div>
-                <button onclick="exportSalesData()" class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded text-xs font-medium transition-all duration-200">
+                <button onclick="exportSalesData()"
+                    class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded text-xs font-medium transition-all duration-200">
                     <i class="fas fa-download mr-1"></i>Export CSV
                 </button>
             </div>
@@ -372,7 +401,8 @@
                     <i class="fas fa-exclamation-triangle text-yellow-500 text-sm mr-2"></i>
                     <h3 class="text-sm font-semibold text-gray-900">Low Stock Alerts</h3>
                 </div>
-                <button onclick="refreshLowStockAlerts()" class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded text-xs font-medium transition-all duration-200">
+                <button onclick="refreshLowStockAlerts()"
+                    class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded text-xs font-medium transition-all duration-200">
                     <i class="fas fa-sync mr-1"></i>Refresh
                 </button>
             </div>
@@ -430,398 +460,398 @@
         </div>
     </div>
 
-<script>
-// ApexCharts instances
-let salesTrendChart = null;
-let topProductsChart = null;
+    <script>
+        // ApexCharts instances
+        let salesTrendChart = null;
+        let topProductsChart = null;
 
-// Auto-generate report when dates change
-function onDateChange() {
-    const fromDate = document.getElementById('fromDate').value;
-    const toDate = document.getElementById('toDate').value;
+        // Auto-generate report when dates change
+        function onDateChange() {
+            const fromDate = document.getElementById('fromDate').value;
+            const toDate = document.getElementById('toDate').value;
 
-    // Only generate if both dates are set
-    if (fromDate && toDate) {
-        // Add a small delay to avoid rapid API calls if user is quickly changing dates
-        clearTimeout(window.dateChangeTimeout);
-        window.dateChangeTimeout = setTimeout(() => {
-            console.log('📅 Dates changed, auto-generating report...');
-            loadSalesData();
-        }, 500);
-    }
-}
-
-// Money formatting function
-function formatMoney(value, showFull = false) {
-    if (value === 0) return 'UGX 0';
-
-    const absValue = Math.abs(value);
-    const isNegative = value < 0;
-    const prefix = isNegative ? '-UGX ' : 'UGX ';
-
-    if (showFull) {
-        // For tooltips, show full amount with commas
-        return prefix + absValue.toLocaleString();
-    }
-
-    if (absValue >= 1000000000) {
-        return prefix + (absValue / 1000000000).toFixed(1) + 'B';
-    } else if (absValue >= 1000000) {
-        return prefix + (absValue / 1000000).toFixed(1) + 'M';
-    } else if (absValue >= 1000) {
-        return prefix + (absValue / 1000).toFixed(1) + 'K';
-    } else {
-        return prefix + absValue.toLocaleString();
-    }
-}
-
-// Money formatting function without currency prefix
-function formatMoneyWithoutCurrency(value, showFull = false) {
-    if (value === 0) return '0';
-
-    const absValue = Math.abs(value);
-    const isNegative = value < 0;
-    const prefix = isNegative ? '-' : '';
-
-    if (showFull) {
-        // For tooltips, show full amount with commas
-        return prefix + absValue.toLocaleString();
-    }
-
-    if (absValue >= 1000000000) {
-        return prefix + (absValue / 1000000000).toFixed(1) + 'B';
-    } else if (absValue >= 1000000) {
-        return prefix + (absValue / 1000000).toFixed(1) + 'M';
-    } else if (absValue >= 1000) {
-        return prefix + (absValue / 1000).toFixed(1) + 'K';
-    } else {
-        return prefix + absValue.toLocaleString();
-    }
-}
-
-
-
-// Show loading state for all cards
-function showCardsLoading() {
-    // Revenue card
-    const totalRevenueEl = document.getElementById('totalRevenue');
-    const totalRevenueLoadingEl = document.getElementById('totalRevenueLoading');
-    const revenueInfoLoadingEl = document.getElementById('revenueInfoLoading');
-
-    // Profit card
-    const totalProfitEl = document.getElementById('totalProfit');
-    const totalProfitLoadingEl = document.getElementById('totalProfitLoading');
-    const profitMarginEl = document.getElementById('profitMargin');
-    const profitMarginLoadingEl = document.getElementById('profitMarginLoading');
-
-    // Orders card
-    const totalOrdersEl = document.getElementById('totalOrders');
-    const totalOrdersLoadingEl = document.getElementById('totalOrdersLoading');
-    const ordersInfoLoadingEl = document.getElementById('ordersInfoLoading');
-
-    // Average Order card
-    const avgOrderEl = document.getElementById('avgOrder');
-    const avgOrderLoadingEl = document.getElementById('avgOrderLoading');
-    const avgOrderInfoLoadingEl = document.getElementById('avgOrderInfoLoading');
-
-    // Growth Rate card
-    const growthRateEl = document.getElementById('growthRate');
-    const growthRateLoadingEl = document.getElementById('growthRateLoading');
-    const growthRateInfoLoadingEl = document.getElementById('growthRateInfoLoading');
-
-    // Show loading for all cards
-    if (totalRevenueEl) totalRevenueEl.textContent = '';
-    if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.remove('hidden');
-    if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.remove('hidden');
-
-    if (totalProfitEl) totalProfitEl.textContent = '';
-    if (totalProfitLoadingEl) totalProfitLoadingEl.classList.remove('hidden');
-    if (profitMarginEl) profitMarginEl.textContent = '';
-    if (profitMarginLoadingEl) profitMarginLoadingEl.classList.remove('hidden');
-
-    if (totalOrdersEl) totalOrdersEl.textContent = '';
-    if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.remove('hidden');
-    if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.remove('hidden');
-
-    if (avgOrderEl) avgOrderEl.textContent = '';
-    if (avgOrderLoadingEl) avgOrderLoadingEl.classList.remove('hidden');
-    if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.remove('hidden');
-
-    if (growthRateEl) growthRateEl.textContent = '';
-    if (growthRateLoadingEl) growthRateLoadingEl.classList.remove('hidden');
-    if (growthRateInfoLoadingEl) growthRateInfoLoadingEl.classList.remove('hidden');
-}
-
-async function loadSalesData() {
-    console.log('🚀 loadSalesData function called');
-
-    // Show loading state for all cards
-    showCardsLoading();
-
-    const fromDateEl = document.getElementById('fromDate');
-    const toDateEl = document.getElementById('toDate');
-
-    if (!fromDateEl || !toDateEl) {
-        console.error('❌ Date input elements not found in DOM');
-        showToast('Page elements not loaded properly. Please refresh the page.', 'error');
-        return;
-    }
-
-    const fromDate = fromDateEl.value;
-    const toDate = toDateEl.value;
-
-    console.log('📅 Date values:', { fromDate, toDate });
-
-    if (!fromDate || !toDate) {
-        console.log('❌ Missing dates');
-        showToast('Please select both from and to dates', 'error');
-        return;
-    }
-
-    if (new Date(fromDate) > new Date(toDate)) {
-        console.log('❌ Invalid date range');
-        showToast('From date cannot be later than to date', 'error');
-        return;
-    }
-
-
-
-    try {
-        // FIX: Corrected the API endpoint URL
-        const url = `/api/reports/sales-data?from_date=${fromDate}&to_date=${toDate}`;
-        console.log('🔍 Fetching sales data from:', url);
-        console.log('🔍 Current location:', window.location.href);
-
-        const response = await fetch(url, {
-            credentials: 'include'
-        });
-
-        console.log('🔍 Response status:', response.status);
-        console.log('🔍 Response headers:', response.headers);
-
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error('🔍 Response error:', errorText);
-            throw new Error(`Failed to fetch sales data: ${response.status} - ${errorText}`);
+            // Only generate if both dates are set
+            if (fromDate && toDate) {
+                // Add a small delay to avoid rapid API calls if user is quickly changing dates
+                clearTimeout(window.dateChangeTimeout);
+                window.dateChangeTimeout = setTimeout(() => {
+                    console.log('📅 Dates changed, auto-generating report...');
+                    loadSalesData();
+                }, 500);
+            }
         }
 
-        const data = await response.json();
-        console.log('🔍 Received data:', data);
-        console.log('🔍 Data type:', typeof data);
-        console.log('🔍 Data.success:', data.success);
+        // Money formatting function
+        function formatMoney(value, showFull = false) {
+            if (value === 0) return 'UGX 0';
 
-        if (data.success) {
-            console.log('✅ Data is valid, updating UI');
+            const absValue = Math.abs(value);
+            const isNegative = value < 0;
+            const prefix = isNegative ? '-UGX ' : 'UGX ';
 
-            // Update summary cards
+            if (showFull) {
+                // For tooltips, show full amount with commas
+                return prefix + absValue.toLocaleString();
+            }
+
+            if (absValue >= 1000000000) {
+                return prefix + (absValue / 1000000000).toFixed(1) + 'B';
+            } else if (absValue >= 1000000) {
+                return prefix + (absValue / 1000000).toFixed(1) + 'M';
+            } else if (absValue >= 1000) {
+                return prefix + (absValue / 1000).toFixed(1) + 'K';
+            } else {
+                return prefix + absValue.toLocaleString();
+            }
+        }
+
+        // Money formatting function without currency prefix
+        function formatMoneyWithoutCurrency(value, showFull = false) {
+            if (value === 0) return '0';
+
+            const absValue = Math.abs(value);
+            const isNegative = value < 0;
+            const prefix = isNegative ? '-' : '';
+
+            if (showFull) {
+                // For tooltips, show full amount with commas
+                return prefix + absValue.toLocaleString();
+            }
+
+            if (absValue >= 1000000000) {
+                return prefix + (absValue / 1000000000).toFixed(1) + 'B';
+            } else if (absValue >= 1000000) {
+                return prefix + (absValue / 1000000).toFixed(1) + 'M';
+            } else if (absValue >= 1000) {
+                return prefix + (absValue / 1000).toFixed(1) + 'K';
+            } else {
+                return prefix + absValue.toLocaleString();
+            }
+        }
+
+
+
+        // Show loading state for all cards
+        function showCardsLoading() {
+            // Revenue card
             const totalRevenueEl = document.getElementById('totalRevenue');
             const totalRevenueLoadingEl = document.getElementById('totalRevenueLoading');
             const revenueInfoLoadingEl = document.getElementById('revenueInfoLoading');
 
+            // Profit card
             const totalProfitEl = document.getElementById('totalProfit');
             const totalProfitLoadingEl = document.getElementById('totalProfitLoading');
             const profitMarginEl = document.getElementById('profitMargin');
             const profitMarginLoadingEl = document.getElementById('profitMarginLoading');
 
+            // Orders card
             const totalOrdersEl = document.getElementById('totalOrders');
             const totalOrdersLoadingEl = document.getElementById('totalOrdersLoading');
             const ordersInfoLoadingEl = document.getElementById('ordersInfoLoading');
 
+            // Average Order card
             const avgOrderEl = document.getElementById('avgOrder');
             const avgOrderLoadingEl = document.getElementById('avgOrderLoading');
             const avgOrderInfoLoadingEl = document.getElementById('avgOrderInfoLoading');
 
+            // Growth Rate card
             const growthRateEl = document.getElementById('growthRate');
             const growthRateLoadingEl = document.getElementById('growthRateLoading');
             const growthRateInfoLoadingEl = document.getElementById('growthRateInfoLoading');
 
-            // Update values and hide loading indicators
-            if (totalRevenueEl) {
-                totalRevenueEl.textContent = formatMoneyWithoutCurrency(data.summary.total_revenue);
-                if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.add('hidden');
-                if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.add('hidden');
+            // Show loading for all cards
+            if (totalRevenueEl) totalRevenueEl.textContent = '';
+            if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.remove('hidden');
+            if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.remove('hidden');
+
+            if (totalProfitEl) totalProfitEl.textContent = '';
+            if (totalProfitLoadingEl) totalProfitLoadingEl.classList.remove('hidden');
+            if (profitMarginEl) profitMarginEl.textContent = '';
+            if (profitMarginLoadingEl) profitMarginLoadingEl.classList.remove('hidden');
+
+            if (totalOrdersEl) totalOrdersEl.textContent = '';
+            if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.remove('hidden');
+            if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.remove('hidden');
+
+            if (avgOrderEl) avgOrderEl.textContent = '';
+            if (avgOrderLoadingEl) avgOrderLoadingEl.classList.remove('hidden');
+            if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.remove('hidden');
+
+            if (growthRateEl) growthRateEl.textContent = '';
+            if (growthRateLoadingEl) growthRateLoadingEl.classList.remove('hidden');
+            if (growthRateInfoLoadingEl) growthRateInfoLoadingEl.classList.remove('hidden');
+        }
+
+        async function loadSalesData() {
+            console.log('🚀 loadSalesData function called');
+
+            // Show loading state for all cards
+            showCardsLoading();
+
+            const fromDateEl = document.getElementById('fromDate');
+            const toDateEl = document.getElementById('toDate');
+
+            if (!fromDateEl || !toDateEl) {
+                console.error('❌ Date input elements not found in DOM');
+                showToast('Page elements not loaded properly. Please refresh the page.', 'error');
+                return;
             }
 
-            if (totalProfitEl) {
-                totalProfitEl.textContent = formatMoneyWithoutCurrency(data.summary.profit);
-                if (totalProfitLoadingEl) totalProfitLoadingEl.classList.add('hidden');
-            }
-            if (profitMarginEl) {
-                // Round profit margin to 2 decimal places
-                const roundedProfitMargin = Math.round(data.summary.profit_margin * 100) / 100;
-                profitMarginEl.textContent = `${roundedProfitMargin}%`;
-                if (profitMarginLoadingEl) profitMarginLoadingEl.classList.add('hidden');
-            }
+            const fromDate = fromDateEl.value;
+            const toDate = toDateEl.value;
 
-            if (totalOrdersEl) {
-                totalOrdersEl.textContent = data.summary.total_orders.toLocaleString();
-                if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.add('hidden');
-                if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.add('hidden');
+            console.log('📅 Date values:', { fromDate, toDate });
+
+            if (!fromDate || !toDate) {
+                console.log('❌ Missing dates');
+                showToast('Please select both from and to dates', 'error');
+                return;
             }
 
-            if (avgOrderEl) {
-                avgOrderEl.textContent = formatMoneyWithoutCurrency(Math.round(data.summary.avg_order_value));
-                if (avgOrderLoadingEl) avgOrderLoadingEl.classList.add('hidden');
-                if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.add('hidden');
+            if (new Date(fromDate) > new Date(toDate)) {
+                console.log('❌ Invalid date range');
+                showToast('From date cannot be later than to date', 'error');
+                return;
             }
-            if (growthRateEl) {
-                const growthRate = data.summary.growth_rate;
-                // Round growth rate to 2 decimal places
-                const roundedGrowthRate = Math.round(growthRate * 100) / 100;
-                const growthText = `${roundedGrowthRate > 0 ? '+' : ''}${roundedGrowthRate}%`;
-                growthRateEl.textContent = growthText;
 
-                // Update color based on growth rate
-                const growthContainer = growthRateEl.closest('.bg-white');
-                const growthIcon = growthContainer.querySelector('.fas');
-                const growthSubtext = growthContainer.querySelector('.text-xs.text-orange-600');
 
-                if (growthRate > 0) {
-                    // Positive growth - green
-                    growthRateEl.className = 'text-lg font-bold text-green-600';
-                    if (growthIcon) {
-                        growthIcon.className = 'fas fa-trending-up text-white text-sm';
-                        growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center';
-                    }
-                    if (growthSubtext) {
-                        growthSubtext.className = 'text-xs text-green-600';
-                        growthSubtext.innerHTML = '<i class="fas fa-arrow-up mr-1"></i>vs previous period';
-                    }
-                } else if (growthRate < 0) {
-                    // Negative growth - red
-                    growthRateEl.className = 'text-lg font-bold text-red-600';
-                    if (growthIcon) {
-                        growthIcon.className = 'fas fa-trending-down text-white text-sm';
-                        growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center';
-                    }
-                    if (growthSubtext) {
-                        growthSubtext.className = 'text-xs text-red-600';
-                        growthSubtext.innerHTML = '<i class="fas fa-arrow-down mr-1"></i>vs previous period';
-                    }
-                } else {
-                    // No growth - gray
-                    growthRateEl.className = 'text-lg font-bold text-gray-600';
-                    if (growthIcon) {
-                        growthIcon.className = 'fas fa-minus text-white text-sm';
-                        growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-gray-500 to-gray-600 rounded-lg flex items-center justify-center';
-                    }
-                    if (growthSubtext) {
-                        growthSubtext.className = 'text-xs text-gray-600';
-                        growthSubtext.innerHTML = '<i class="fas fa-minus mr-1"></i>vs previous period';
-                    }
+
+            try {
+                // FIX: Corrected the API endpoint URL
+                const url = `/api/reports/sales-data?from_date=${fromDate}&to_date=${toDate}`;
+                console.log('🔍 Fetching sales data from:', url);
+                console.log('🔍 Current location:', window.location.href);
+
+                const response = await fetch(url, {
+                    credentials: 'include'
+                });
+
+                console.log('🔍 Response status:', response.status);
+                console.log('🔍 Response headers:', response.headers);
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('🔍 Response error:', errorText);
+                    throw new Error(`Failed to fetch sales data: ${response.status} - ${errorText}`);
                 }
 
-                // Hide loading indicators
+                const data = await response.json();
+                console.log('🔍 Received data:', data);
+                console.log('🔍 Data type:', typeof data);
+                console.log('🔍 Data.success:', data.success);
+
+                if (data.success) {
+                    console.log('✅ Data is valid, updating UI');
+
+                    // Update summary cards
+                    const totalRevenueEl = document.getElementById('totalRevenue');
+                    const totalRevenueLoadingEl = document.getElementById('totalRevenueLoading');
+                    const revenueInfoLoadingEl = document.getElementById('revenueInfoLoading');
+
+                    const totalProfitEl = document.getElementById('totalProfit');
+                    const totalProfitLoadingEl = document.getElementById('totalProfitLoading');
+                    const profitMarginEl = document.getElementById('profitMargin');
+                    const profitMarginLoadingEl = document.getElementById('profitMarginLoading');
+
+                    const totalOrdersEl = document.getElementById('totalOrders');
+                    const totalOrdersLoadingEl = document.getElementById('totalOrdersLoading');
+                    const ordersInfoLoadingEl = document.getElementById('ordersInfoLoading');
+
+                    const avgOrderEl = document.getElementById('avgOrder');
+                    const avgOrderLoadingEl = document.getElementById('avgOrderLoading');
+                    const avgOrderInfoLoadingEl = document.getElementById('avgOrderInfoLoading');
+
+                    const growthRateEl = document.getElementById('growthRate');
+                    const growthRateLoadingEl = document.getElementById('growthRateLoading');
+                    const growthRateInfoLoadingEl = document.getElementById('growthRateInfoLoading');
+
+                    // Update values and hide loading indicators
+                    if (totalRevenueEl) {
+                        totalRevenueEl.textContent = formatMoneyWithoutCurrency(data.summary.total_revenue);
+                        if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.add('hidden');
+                        if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.add('hidden');
+                    }
+
+                    if (totalProfitEl) {
+                        totalProfitEl.textContent = formatMoneyWithoutCurrency(data.summary.profit);
+                        if (totalProfitLoadingEl) totalProfitLoadingEl.classList.add('hidden');
+                    }
+                    if (profitMarginEl) {
+                        // Round profit margin to 2 decimal places
+                        const roundedProfitMargin = Math.round(data.summary.profit_margin * 100) / 100;
+                        profitMarginEl.textContent = `${roundedProfitMargin}%`;
+                        if (profitMarginLoadingEl) profitMarginLoadingEl.classList.add('hidden');
+                    }
+
+                    if (totalOrdersEl) {
+                        totalOrdersEl.textContent = data.summary.total_orders.toLocaleString();
+                        if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.add('hidden');
+                        if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.add('hidden');
+                    }
+
+                    if (avgOrderEl) {
+                        avgOrderEl.textContent = formatMoneyWithoutCurrency(Math.round(data.summary.avg_order_value));
+                        if (avgOrderLoadingEl) avgOrderLoadingEl.classList.add('hidden');
+                        if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.add('hidden');
+                    }
+                    if (growthRateEl) {
+                        const growthRate = data.summary.growth_rate;
+                        // Round growth rate to 2 decimal places
+                        const roundedGrowthRate = Math.round(growthRate * 100) / 100;
+                        const growthText = `${roundedGrowthRate > 0 ? '+' : ''}${roundedGrowthRate}%`;
+                        growthRateEl.textContent = growthText;
+
+                        // Update color based on growth rate
+                        const growthContainer = growthRateEl.closest('.bg-white');
+                        const growthIcon = growthContainer.querySelector('.fas');
+                        const growthSubtext = growthContainer.querySelector('.text-xs.text-orange-600');
+
+                        if (growthRate > 0) {
+                            // Positive growth - green
+                            growthRateEl.className = 'text-lg font-bold text-green-600';
+                            if (growthIcon) {
+                                growthIcon.className = 'fas fa-trending-up text-white text-sm';
+                                growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center';
+                            }
+                            if (growthSubtext) {
+                                growthSubtext.className = 'text-xs text-green-600';
+                                growthSubtext.innerHTML = '<i class="fas fa-arrow-up mr-1"></i>vs previous period';
+                            }
+                        } else if (growthRate < 0) {
+                            // Negative growth - red
+                            growthRateEl.className = 'text-lg font-bold text-red-600';
+                            if (growthIcon) {
+                                growthIcon.className = 'fas fa-trending-down text-white text-sm';
+                                growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center';
+                            }
+                            if (growthSubtext) {
+                                growthSubtext.className = 'text-xs text-red-600';
+                                growthSubtext.innerHTML = '<i class="fas fa-arrow-down mr-1"></i>vs previous period';
+                            }
+                        } else {
+                            // No growth - gray
+                            growthRateEl.className = 'text-lg font-bold text-gray-600';
+                            if (growthIcon) {
+                                growthIcon.className = 'fas fa-minus text-white text-sm';
+                                growthIcon.parentElement.className = 'w-8 h-8 bg-gradient-to-br from-gray-500 to-gray-600 rounded-lg flex items-center justify-center';
+                            }
+                            if (growthSubtext) {
+                                growthSubtext.className = 'text-xs text-gray-600';
+                                growthSubtext.innerHTML = '<i class="fas fa-minus mr-1"></i>vs previous period';
+                            }
+                        }
+
+                        // Hide loading indicators
+                        if (growthRateLoadingEl) growthRateLoadingEl.classList.add('hidden');
+                        if (growthRateInfoLoadingEl) growthRateInfoLoadingEl.classList.add('hidden');
+                    }
+
+                    // Update sales table
+                    console.log('🔍 Updating sales table with', data.sales_data.length, 'records');
+                    updateSalesTable(data.sales_data);
+
+                    // Update charts
+                    console.log('🔍 Updating charts with:', data.chart_data);
+                    updateCharts(data.chart_data);
+
+                    console.log('✅ UI update complete');
+                    showToast('Sales report generated successfully!', 'success');
+                } else {
+                    console.log('❌ Data.success is false');
+                    throw new Error('Invalid response format - success is false');
+                }
+
+            } catch (error) {
+                console.error('❌ Error loading sales data:', error);
+                console.error('❌ Error stack:', error.stack);
+                console.error('❌ Error message:', error.message);
+
+                let errorMessage = 'Failed to load sales data. Please try again.';
+                if (error.message.includes('Failed to fetch')) {
+                    errorMessage = 'Network error: Unable to connect to server. Please check your connection.';
+                } else if (error.message.includes('401')) {
+                    errorMessage = 'Authentication error: Please log in again.';
+                } else if (error.message.includes('500')) {
+                    errorMessage = 'Server error: Please try again later.';
+                }
+
+                showToast(errorMessage, 'error');
+
+                // Reset to default values safely and hide all loading indicators
+                const totalRevenueEl = document.getElementById('totalRevenue');
+                const totalRevenueLoadingEl = document.getElementById('totalRevenueLoading');
+                const revenueInfoLoadingEl = document.getElementById('revenueInfoLoading');
+
+                const totalProfitEl = document.getElementById('totalProfit');
+                const totalProfitLoadingEl = document.getElementById('totalProfitLoading');
+                const profitMarginEl = document.getElementById('profitMargin');
+                const profitMarginLoadingEl = document.getElementById('profitMarginLoading');
+
+                const totalOrdersEl = document.getElementById('totalOrders');
+                const totalOrdersLoadingEl = document.getElementById('totalOrdersLoading');
+                const ordersInfoLoadingEl = document.getElementById('ordersInfoLoading');
+
+                const avgOrderEl = document.getElementById('avgOrder');
+                const avgOrderLoadingEl = document.getElementById('avgOrderLoading');
+                const avgOrderInfoLoadingEl = document.getElementById('avgOrderInfoLoading');
+
+                const growthRateEl = document.getElementById('growthRate');
+                const growthRateLoadingEl = document.getElementById('growthRateLoading');
+                const growthRateInfoLoadingEl = document.getElementById('growthRateInfoLoading');
+
+                // Reset values
+                if (totalRevenueEl) totalRevenueEl.textContent = '0';
+                if (totalProfitEl) totalProfitEl.textContent = '0';
+                if (profitMarginEl) profitMarginEl.textContent = '0%';
+                if (totalOrdersEl) totalOrdersEl.textContent = '0';
+                if (avgOrderEl) avgOrderEl.textContent = '0';
+                if (growthRateEl) growthRateEl.textContent = '0%';
+
+                // Hide all loading indicators
+                if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.add('hidden');
+                if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.add('hidden');
+                if (totalProfitLoadingEl) totalProfitLoadingEl.classList.add('hidden');
+                if (profitMarginLoadingEl) profitMarginLoadingEl.classList.add('hidden');
+                if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.add('hidden');
+                if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.add('hidden');
+                if (avgOrderLoadingEl) avgOrderLoadingEl.classList.add('hidden');
+                if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.add('hidden');
                 if (growthRateLoadingEl) growthRateLoadingEl.classList.add('hidden');
                 if (growthRateInfoLoadingEl) growthRateInfoLoadingEl.classList.add('hidden');
+
+                // Show chart placeholders
+                showChartPlaceholders();
             }
-
-            // Update sales table
-            console.log('🔍 Updating sales table with', data.sales_data.length, 'records');
-            updateSalesTable(data.sales_data);
-
-            // Update charts
-            console.log('🔍 Updating charts with:', data.chart_data);
-            updateCharts(data.chart_data);
-
-            console.log('✅ UI update complete');
-            showToast('Sales report generated successfully!', 'success');
-        } else {
-            console.log('❌ Data.success is false');
-            throw new Error('Invalid response format - success is false');
         }
 
-    } catch (error) {
-        console.error('❌ Error loading sales data:', error);
-        console.error('❌ Error stack:', error.stack);
-        console.error('❌ Error message:', error.message);
+        function showChartPlaceholders() {
+            // Show placeholders and hide charts
+            const salesPlaceholder = document.getElementById('salesTrendPlaceholder');
+            const topProductsPlaceholder = document.getElementById('topProductsPlaceholder');
 
-        let errorMessage = 'Failed to load sales data. Please try again.';
-        if (error.message.includes('Failed to fetch')) {
-            errorMessage = 'Network error: Unable to connect to server. Please check your connection.';
-        } else if (error.message.includes('401')) {
-            errorMessage = 'Authentication error: Please log in again.';
-        } else if (error.message.includes('500')) {
-            errorMessage = 'Server error: Please try again later.';
+            if (salesPlaceholder) salesPlaceholder.style.display = 'flex';
+            if (topProductsPlaceholder) topProductsPlaceholder.style.display = 'flex';
+
+
+
+            // Destroy existing charts
+            if (salesTrendChart) {
+                salesTrendChart.destroy();
+                salesTrendChart = null;
+            }
+            if (topProductsChart) {
+                topProductsChart.destroy();
+                topProductsChart = null;
+            }
         }
 
-        showToast(errorMessage, 'error');
-
-        // Reset to default values safely and hide all loading indicators
-        const totalRevenueEl = document.getElementById('totalRevenue');
-        const totalRevenueLoadingEl = document.getElementById('totalRevenueLoading');
-        const revenueInfoLoadingEl = document.getElementById('revenueInfoLoading');
-
-        const totalProfitEl = document.getElementById('totalProfit');
-        const totalProfitLoadingEl = document.getElementById('totalProfitLoading');
-        const profitMarginEl = document.getElementById('profitMargin');
-        const profitMarginLoadingEl = document.getElementById('profitMarginLoading');
-
-        const totalOrdersEl = document.getElementById('totalOrders');
-        const totalOrdersLoadingEl = document.getElementById('totalOrdersLoading');
-        const ordersInfoLoadingEl = document.getElementById('ordersInfoLoading');
-
-        const avgOrderEl = document.getElementById('avgOrder');
-        const avgOrderLoadingEl = document.getElementById('avgOrderLoading');
-        const avgOrderInfoLoadingEl = document.getElementById('avgOrderInfoLoading');
-
-        const growthRateEl = document.getElementById('growthRate');
-        const growthRateLoadingEl = document.getElementById('growthRateLoading');
-        const growthRateInfoLoadingEl = document.getElementById('growthRateInfoLoading');
-
-        // Reset values
-        if (totalRevenueEl) totalRevenueEl.textContent = '0';
-        if (totalProfitEl) totalProfitEl.textContent = '0';
-        if (profitMarginEl) profitMarginEl.textContent = '0%';
-        if (totalOrdersEl) totalOrdersEl.textContent = '0';
-        if (avgOrderEl) avgOrderEl.textContent = '0';
-        if (growthRateEl) growthRateEl.textContent = '0%';
-
-        // Hide all loading indicators
-        if (totalRevenueLoadingEl) totalRevenueLoadingEl.classList.add('hidden');
-        if (revenueInfoLoadingEl) revenueInfoLoadingEl.classList.add('hidden');
-        if (totalProfitLoadingEl) totalProfitLoadingEl.classList.add('hidden');
-        if (profitMarginLoadingEl) profitMarginLoadingEl.classList.add('hidden');
-        if (totalOrdersLoadingEl) totalOrdersLoadingEl.classList.add('hidden');
-        if (ordersInfoLoadingEl) ordersInfoLoadingEl.classList.add('hidden');
-        if (avgOrderLoadingEl) avgOrderLoadingEl.classList.add('hidden');
-        if (avgOrderInfoLoadingEl) avgOrderInfoLoadingEl.classList.add('hidden');
-        if (growthRateLoadingEl) growthRateLoadingEl.classList.add('hidden');
-        if (growthRateInfoLoadingEl) growthRateInfoLoadingEl.classList.add('hidden');
-
-        // Show chart placeholders
-        showChartPlaceholders();
-    }
-}
-
-function showChartPlaceholders() {
-    // Show placeholders and hide charts
-    const salesPlaceholder = document.getElementById('salesTrendPlaceholder');
-    const topProductsPlaceholder = document.getElementById('topProductsPlaceholder');
-
-    if (salesPlaceholder) salesPlaceholder.style.display = 'flex';
-    if (topProductsPlaceholder) topProductsPlaceholder.style.display = 'flex';
 
 
+        function updateSalesTable(salesData) {
+            const tbody = document.getElementById('salesTableBody');
 
-    // Destroy existing charts
-    if (salesTrendChart) {
-        salesTrendChart.destroy();
-        salesTrendChart = null;
-    }
-    if (topProductsChart) {
-        topProductsChart.destroy();
-        topProductsChart = null;
-    }
-}
-
-
-
-function updateSalesTable(salesData) {
-    const tbody = document.getElementById('salesTableBody');
-
-    if (!salesData || salesData.length === 0) {
-        tbody.innerHTML = `
+            if (!salesData || salesData.length === 0) {
+                tbody.innerHTML = `
             <tr>
                 <td colspan="6" class="px-6 py-8 text-center text-gray-500">
                     <i class="fas fa-inbox text-gray-300 text-3xl mb-2"></i>
@@ -829,10 +859,10 @@ function updateSalesTable(salesData) {
                 </td>
             </tr>
         `;
-        return;
-    }
+                return;
+            }
 
-    tbody.innerHTML = salesData.map((sale, index) => `
+            tbody.innerHTML = salesData.map((sale, index) => `
         <tr class="hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50 transition-all duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">
             <td class="px-6 py-4 whitespace-nowrap">
                 <div class="flex items-center">
@@ -878,580 +908,580 @@ function updateSalesTable(salesData) {
             </td>
         </tr>
     `).join('');
-}
-
-function updateCharts(chartData) {
-    console.log('🔍 updateCharts called with:', chartData);
-
-    try {
-        if (!chartData) {
-            console.error('❌ No chart data provided');
-            return;
         }
 
-        // ApexCharts should be available globally from base.html
-        if (typeof ApexCharts === 'undefined') {
-            console.error('❌ ApexCharts not available in updateCharts');
-            showToast('Chart library not loaded. Please refresh the page.', 'error');
-            return;
-        }
+        function updateCharts(chartData) {
+            console.log('🔍 updateCharts called with:', chartData);
 
-        if (!chartData.sales_trend) {
-            console.error('❌ No sales_trend data in chartData');
-        } else {
-            console.log('📊 Updating sales trend chart...');
-            console.log('📊 Sales trend data:', chartData.sales_trend);
-            updateSalesTrendChart(chartData.sales_trend);
-        }
-
-        if (!chartData.top_products) {
-            console.error('❌ No top_products data in chartData');
-        } else {
-            console.log('📊 Updating top products chart...');
-            console.log('📊 Top products data:', chartData.top_products);
-            updateTopProductsChart(chartData.top_products);
-        }
-
-        console.log('✅ Charts updated successfully');
-    } catch (error) {
-        console.error('❌ Error updating charts:', error);
-        console.error('❌ Error stack:', error.stack);
-        showToast('Error updating charts: ' + error.message, 'error');
-    }
-}
-
-function updateSalesTrendChart(trendData) {
-    try {
-        console.log('📊 updateSalesTrendChart called with:', trendData);
-
-        // ApexCharts is loaded globally, but double-check
-        if (typeof ApexCharts === 'undefined') {
-            console.error('❌ ApexCharts not available');
-            showToast('Chart library not loaded', 'error');
-            return;
-        }
-
-        const chartContainer = document.getElementById('salesTrendChart');
-        const placeholder = document.getElementById('salesTrendPlaceholder');
-
-        if (!chartContainer) {
-            console.error('❌ Sales trend chart container not found');
-            showToast('Chart container not found', 'error');
-            return;
-        }
-
-        if (!placeholder) {
-            console.error('❌ Sales trend chart placeholder not found');
-            return;
-        }
-
-        // Validate trend data first
-        if (!trendData || !trendData.labels || !trendData.revenue || !trendData.orders) {
-            console.error('❌ Invalid trend data structure:', trendData);
-            showToast('Invalid chart data received', 'error');
-            return;
-        }
-
-        if (trendData.labels.length === 0) {
-            console.log('⚠️ No data points to display');
-            showToast('No data to display in chart', 'warning');
-            return;
-        }
-
-        console.log('📊 Data validation passed, proceeding with chart creation');
-
-        // Hide placeholder
-        placeholder.style.display = 'none';
-
-        // Destroy existing chart
-        if (salesTrendChart) {
-            console.log('📊 Destroying existing chart');
             try {
-                salesTrendChart.destroy();
-                salesTrendChart = null;
-                console.log('✅ Chart destroyed successfully');
+                if (!chartData) {
+                    console.error('❌ No chart data provided');
+                    return;
+                }
+
+                // ApexCharts should be available globally from base.html
+                if (typeof ApexCharts === 'undefined') {
+                    console.error('❌ ApexCharts not available in updateCharts');
+                    showToast('Chart library not loaded. Please refresh the page.', 'error');
+                    return;
+                }
+
+                if (!chartData.sales_trend) {
+                    console.error('❌ No sales_trend data in chartData');
+                } else {
+                    console.log('📊 Updating sales trend chart...');
+                    console.log('📊 Sales trend data:', chartData.sales_trend);
+                    updateSalesTrendChart(chartData.sales_trend);
+                }
+
+                if (!chartData.top_products) {
+                    console.error('❌ No top_products data in chartData');
+                } else {
+                    console.log('📊 Updating top products chart...');
+                    console.log('📊 Top products data:', chartData.top_products);
+                    updateTopProductsChart(chartData.top_products);
+                }
+
+                console.log('✅ Charts updated successfully');
             } catch (error) {
-                console.error('❌ Error destroying chart:', error);
-                salesTrendChart = null; // Force reset even if destroy fails
+                console.error('❌ Error updating charts:', error);
+                console.error('❌ Error stack:', error.stack);
+                showToast('Error updating charts: ' + error.message, 'error');
             }
         }
 
-        // Format labels for better display
-        const formattedLabels = trendData.labels.map(label => {
+        function updateSalesTrendChart(trendData) {
             try {
-                const date = new Date(label);
-                return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-            } catch (e) {
-                console.warn('Error formatting date:', label, e);
-                return label;
-            }
-        });
+                console.log('📊 updateSalesTrendChart called with:', trendData);
 
-        console.log('🔍 Chart will use:', {
-            labels: formattedLabels,
-            revenue: trendData.revenue,
-            orders: trendData.orders
-        });
+                // ApexCharts is loaded globally, but double-check
+                if (typeof ApexCharts === 'undefined') {
+                    console.error('❌ ApexCharts not available');
+                    showToast('Chart library not loaded', 'error');
+                    return;
+                }
 
-        // Enhanced ApexCharts configuration with better styling
-        const options = {
-            series: [
-                {
-                    name: 'Revenue',
-                    type: 'area',
-                    data: trendData.revenue
-                },
-                {
-                    name: 'Orders',
-                    type: 'line',
-                    data: trendData.orders
+                const chartContainer = document.getElementById('salesTrendChart');
+                const placeholder = document.getElementById('salesTrendPlaceholder');
+
+                if (!chartContainer) {
+                    console.error('❌ Sales trend chart container not found');
+                    showToast('Chart container not found', 'error');
+                    return;
                 }
-            ],
-            chart: {
-                height: '100%',
-                type: 'line',
-                toolbar: {
-                    show: false
-                },
-                animations: {
-                    enabled: true,
-                    easing: 'easeinout',
-                    speed: 1000
-                },
-                background: 'transparent',
-                fontFamily: 'Inter, system-ui, sans-serif',
-                parentHeightOffset: 0
-            },
-            colors: ['#10b981', '#3b82f6'],
-            stroke: {
-                width: [0, 3],
-                curve: 'smooth',
-                lineCap: 'round'
-            },
-            fill: {
-                type: ['gradient', 'solid'],
-                gradient: {
-                    shade: 'light',
-                    type: 'vertical',
-                    shadeIntensity: 0.5,
-                    gradientToColors: ['#34d399'],
-                    inverseColors: false,
-                    opacityFrom: 0.6,
-                    opacityTo: 0.1,
-                    stops: [0, 100]
+
+                if (!placeholder) {
+                    console.error('❌ Sales trend chart placeholder not found');
+                    return;
                 }
-            },
-            labels: formattedLabels,
-            markers: {
-                size: [0, 4],
-                colors: ['#10b981', '#3b82f6'],
-                strokeColors: '#fff',
-                strokeWidth: 2,
-                hover: {
-                    size: 6
+
+                // Validate trend data first
+                if (!trendData || !trendData.labels || !trendData.revenue || !trendData.orders) {
+                    console.error('❌ Invalid trend data structure:', trendData);
+                    showToast('Invalid chart data received', 'error');
+                    return;
                 }
-            },
-            xaxis: {
-                type: 'category',
-                axisBorder: {
-                    show: false
-                },
-                axisTicks: {
-                    show: false
-                },
-                labels: {
-                    style: {
-                        colors: '#6b7280',
-                        fontSize: '12px',
-                        fontWeight: 500
+
+                if (trendData.labels.length === 0) {
+                    console.log('⚠️ No data points to display');
+                    showToast('No data to display in chart', 'warning');
+                    return;
+                }
+
+                console.log('📊 Data validation passed, proceeding with chart creation');
+
+                // Hide placeholder
+                placeholder.style.display = 'none';
+
+                // Destroy existing chart
+                if (salesTrendChart) {
+                    console.log('📊 Destroying existing chart');
+                    try {
+                        salesTrendChart.destroy();
+                        salesTrendChart = null;
+                        console.log('✅ Chart destroyed successfully');
+                    } catch (error) {
+                        console.error('❌ Error destroying chart:', error);
+                        salesTrendChart = null; // Force reset even if destroy fails
                     }
                 }
-            },
-            yaxis: [
-                {
-                    title: {
-                        text: ''
-                    },
-                    labels: {
-                        formatter: function (val) {
-                            // Remove UGX prefix for chart labels
-                            const formatted = formatMoney(val);
-                            return formatted.replace('UGX ', '');
+
+                // Format labels for better display
+                const formattedLabels = trendData.labels.map(label => {
+                    try {
+                        const date = new Date(label);
+                        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                    } catch (e) {
+                        console.warn('Error formatting date:', label, e);
+                        return label;
+                    }
+                });
+
+                console.log('🔍 Chart will use:', {
+                    labels: formattedLabels,
+                    revenue: trendData.revenue,
+                    orders: trendData.orders
+                });
+
+                // Enhanced ApexCharts configuration with better styling
+                const options = {
+                    series: [
+                        {
+                            name: 'Revenue',
+                            type: 'area',
+                            data: trendData.revenue
                         },
-                        style: {
-                            colors: '#6b7280',
-                            fontSize: '11px'
+                        {
+                            name: 'Orders',
+                            type: 'line',
+                            data: trendData.orders
+                        }
+                    ],
+                    chart: {
+                        height: '100%',
+                        type: 'line',
+                        toolbar: {
+                            show: false
+                        },
+                        animations: {
+                            enabled: true,
+                            easing: 'easeinout',
+                            speed: 1000
+                        },
+                        background: 'transparent',
+                        fontFamily: 'Inter, system-ui, sans-serif',
+                        parentHeightOffset: 0
+                    },
+                    colors: ['#10b981', '#3b82f6'],
+                    stroke: {
+                        width: [0, 3],
+                        curve: 'smooth',
+                        lineCap: 'round'
+                    },
+                    fill: {
+                        type: ['gradient', 'solid'],
+                        gradient: {
+                            shade: 'light',
+                            type: 'vertical',
+                            shadeIntensity: 0.5,
+                            gradientToColors: ['#34d399'],
+                            inverseColors: false,
+                            opacityFrom: 0.6,
+                            opacityTo: 0.1,
+                            stops: [0, 100]
                         }
                     },
-                    axisBorder: {
-                        show: false
-                    },
-                    axisTicks: {
-                        show: false
-                    }
-                },
-                {
-                    opposite: true,
-                    title: {
-                        text: ''
-                    },
-                    labels: {
-                        style: {
-                            colors: '#6b7280',
-                            fontSize: '11px'
+                    labels: formattedLabels,
+                    markers: {
+                        size: [0, 4],
+                        colors: ['#10b981', '#3b82f6'],
+                        strokeColors: '#fff',
+                        strokeWidth: 2,
+                        hover: {
+                            size: 6
                         }
                     },
-                    axisBorder: {
-                        show: false
-                    },
-                    axisTicks: {
-                        show: false
-                    }
-                }
-            ],
-            tooltip: {
-                shared: true,
-                intersect: false,
-                theme: 'light',
-                style: {
-                    fontSize: '12px'
-                },
-                y: [
-                    {
-                        formatter: function (val) {
-                            return formatMoney(val, true);
-                        }
-                    },
-                    {
-                        formatter: function (val) {
-                            return val + ' orders';
-                        }
-                    }
-                ]
-            },
-            legend: {
-                show: false
-            },
-            grid: {
-                show: true,
-                borderColor: '#f3f4f6',
-                strokeDashArray: 2,
-                position: 'back',
-                xaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                yaxis: {
-                    lines: {
-                        show: true
-                    }
-                },
-                padding: {
-                    top: 0,
-                    right: 15,
-                    bottom: 5,
-                    left: 5
-                }
-            }
-        };
-
-        // Create new chart
-        console.log('📊 Creating ApexCharts instance with options:', options);
-        salesTrendChart = new ApexCharts(chartContainer, options);
-
-        console.log('📊 Rendering sales trend chart...');
-        salesTrendChart.render().then(() => {
-            console.log('✅ Sales trend chart rendered successfully');
-        }).catch((error) => {
-            console.error('❌ Error rendering sales trend chart:', error);
-            showToast('Error rendering sales trend chart: ' + error.message, 'error');
-        });
-
-        console.log('✅ Sales trend chart created successfully');
-
-    } catch (error) {
-        console.error('❌ Error creating sales trend chart:', error);
-
-        // Show placeholder if chart creation fails
-        const placeholder = document.getElementById('salesTrendPlaceholder');
-        if (placeholder) {
-            placeholder.style.display = 'flex';
-        }
-    }
-}
-
-
-
-function updateTopProductsChart(productsData) {
-    try {
-        console.log('📊 updateTopProductsChart called with:', productsData);
-
-        // ApexCharts is loaded globally, but double-check
-        if (typeof ApexCharts === 'undefined') {
-            console.error('❌ ApexCharts not available');
-            return;
-        }
-
-        const chartContainer = document.getElementById('topProductsChart');
-        const placeholder = document.getElementById('topProductsPlaceholder');
-
-        if (!chartContainer) {
-            console.error('❌ Top products chart container not found');
-            return;
-        }
-
-        if (!placeholder) {
-            console.error('❌ Top products chart placeholder not found');
-            return;
-        }
-
-        // Hide placeholder
-        placeholder.style.display = 'none';
-
-        // Destroy existing chart
-        if (topProductsChart) {
-            try {
-                topProductsChart.destroy();
-                topProductsChart = null;
-                console.log('✅ Top products chart destroyed successfully');
-            } catch (error) {
-                console.error('❌ Error destroying top products chart:', error);
-                topProductsChart = null; // Force reset even if destroy fails
-            }
-        }
-
-        // Validate products data
-        if (!productsData.labels || !productsData.revenue) {
-            console.error('❌ Invalid products data structure:', productsData);
-            return;
-        }
-
-        if (productsData.labels.length === 0) {
-            console.log('⚠️ No products data to display');
-            return;
-        }
-
-        console.log('🔍 Top products chart will use:', productsData);
-
-        // Enhanced ApexCharts configuration for donut chart
-        const options = {
-            series: productsData.revenue,
-            chart: {
-                type: 'donut',
-                height: '100%',
-                animations: {
-                    enabled: true,
-                    easing: 'easeinout',
-                    speed: 1000
-                },
-                background: 'transparent',
-                fontFamily: 'Inter, system-ui, sans-serif',
-                parentHeightOffset: 0
-            },
-            labels: productsData.labels,
-            colors: [
-                '#10b981', '#3b82f6', '#8b5cf6', '#f59e0b',
-                '#ef4444', '#06b6d4', '#84cc16', '#f97316',
-                '#ec4899', '#6366f1'
-            ],
-            plotOptions: {
-                pie: {
-                    donut: {
-                        size: '70%',
+                    xaxis: {
+                        type: 'category',
+                        axisBorder: {
+                            show: false
+                        },
+                        axisTicks: {
+                            show: false
+                        },
                         labels: {
-                            show: true,
-                            name: {
-                                show: true,
-                                fontSize: '13px',
-                                fontWeight: 600,
-                                color: '#374151',
-                                offsetY: -8,
-                                formatter: function (val) {
-                                    return val.length > 12 ? val.substring(0, 12) + '...' : val;
-                                }
-                            },
-                            value: {
-                                show: true,
-                                fontSize: '14px',
-                                fontWeight: 700,
-                                color: '#1f2937',
-                                offsetY: 8,
-                                formatter: function (val) {
-                                    return formatMoney(parseInt(val));
-                                }
-                            },
-                            total: {
-                                show: true,
-                                showAlways: true,
-                                label: 'Total Revenue',
-                                fontSize: '11px',
-                                fontWeight: 500,
-                                color: '#6b7280',
-                                formatter: function (w) {
-                                    const total = w.globals.seriesTotals.reduce((a, b) => a + b, 0);
-                                    return formatMoney(total);
-                                }
+                            style: {
+                                colors: '#6b7280',
+                                fontSize: '12px',
+                                fontWeight: 500
                             }
                         }
                     },
-                    expandOnClick: true
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            legend: {
-                position: 'bottom',
-                horizontalAlign: 'center',
-                fontSize: '10px',
-                fontWeight: 500,
-                markers: {
-                    width: 8,
-                    height: 8,
-                    radius: 4
-                },
-                itemMargin: {
-                    horizontal: 6,
-                    vertical: 2
-                },
-                formatter: function(seriesName, opts) {
-                    const value = opts.w.globals.series[opts.seriesIndex];
-                    const shortName = seriesName.length > 15 ? seriesName.substring(0, 15) + '...' : seriesName;
-                    return shortName + ': ' + formatMoney(value);
-                }
-            },
-            tooltip: {
-                theme: 'light',
-                style: {
-                    fontSize: '12px'
-                },
-                y: {
-                    formatter: function (val) {
-                        return formatMoney(val, true);
-                    }
-                }
-            },
-            states: {
-                hover: {
-                    filter: {
-                        type: 'lighten',
-                        value: 0.1
-                    }
-                },
-                active: {
-                    allowMultipleDataPointsSelection: false,
-                    filter: {
-                        type: 'darken',
-                        value: 0.1
-                    }
-                }
-            },
-            responsive: [{
-                breakpoint: 768,
-                options: {
+                    yaxis: [
+                        {
+                            title: {
+                                text: ''
+                            },
+                            labels: {
+                                formatter: function (val) {
+                                    // Remove UGX prefix for chart labels
+                                    const formatted = formatMoney(val);
+                                    return formatted.replace('UGX ', '');
+                                },
+                                style: {
+                                    colors: '#6b7280',
+                                    fontSize: '11px'
+                                }
+                            },
+                            axisBorder: {
+                                show: false
+                            },
+                            axisTicks: {
+                                show: false
+                            }
+                        },
+                        {
+                            opposite: true,
+                            title: {
+                                text: ''
+                            },
+                            labels: {
+                                style: {
+                                    colors: '#6b7280',
+                                    fontSize: '11px'
+                                }
+                            },
+                            axisBorder: {
+                                show: false
+                            },
+                            axisTicks: {
+                                show: false
+                            }
+                        }
+                    ],
+                    tooltip: {
+                        shared: true,
+                        intersect: false,
+                        theme: 'light',
+                        style: {
+                            fontSize: '12px'
+                        },
+                        y: [
+                            {
+                                formatter: function (val) {
+                                    return formatMoney(val, true);
+                                }
+                            },
+                            {
+                                formatter: function (val) {
+                                    return val + ' orders';
+                                }
+                            }
+                        ]
+                    },
                     legend: {
-                        position: 'bottom',
-                        fontSize: '9px',
-                        itemMargin: {
-                            horizontal: 4,
-                            vertical: 1
+                        show: false
+                    },
+                    grid: {
+                        show: true,
+                        borderColor: '#f3f4f6',
+                        strokeDashArray: 2,
+                        position: 'back',
+                        xaxis: {
+                            lines: {
+                                show: false
+                            }
+                        },
+                        yaxis: {
+                            lines: {
+                                show: true
+                            }
+                        },
+                        padding: {
+                            top: 0,
+                            right: 15,
+                            bottom: 5,
+                            left: 5
                         }
                     }
+                };
+
+                // Create new chart
+                console.log('📊 Creating ApexCharts instance with options:', options);
+                salesTrendChart = new ApexCharts(chartContainer, options);
+
+                console.log('📊 Rendering sales trend chart...');
+                salesTrendChart.render().then(() => {
+                    console.log('✅ Sales trend chart rendered successfully');
+                }).catch((error) => {
+                    console.error('❌ Error rendering sales trend chart:', error);
+                    showToast('Error rendering sales trend chart: ' + error.message, 'error');
+                });
+
+                console.log('✅ Sales trend chart created successfully');
+
+            } catch (error) {
+                console.error('❌ Error creating sales trend chart:', error);
+
+                // Show placeholder if chart creation fails
+                const placeholder = document.getElementById('salesTrendPlaceholder');
+                if (placeholder) {
+                    placeholder.style.display = 'flex';
                 }
-            }]
-        };
-
-        // Create new chart
-        console.log('📊 Creating top products ApexCharts instance with options:', options);
-        topProductsChart = new ApexCharts(chartContainer, options);
-
-        console.log('📊 Rendering top products chart...');
-        topProductsChart.render().then(() => {
-            console.log('✅ Top products chart rendered successfully');
-        }).catch((error) => {
-            console.error('❌ Error rendering top products chart:', error);
-            showToast('Error rendering top products chart: ' + error.message, 'error');
-        });
-
-        console.log('✅ Top products chart created successfully');
-
-    } catch (error) {
-        console.error('❌ Error creating top products chart:', error);
-
-        // Show placeholder if chart creation fails
-        const placeholder = document.getElementById('topProductsPlaceholder');
-        if (placeholder) {
-            placeholder.style.display = 'flex';
+            }
         }
-    }
-}
 
-function exportSalesData() {
-    const fromDate = document.getElementById('fromDate').value;
-    const toDate = document.getElementById('toDate').value;
 
-    if (!fromDate || !toDate) {
-        showToast('Please generate a report first before exporting', 'error');
-        return;
-    }
 
-    // Create export URL and trigger download
-    const exportUrl = `/api/orders/export?date_from=${fromDate}&date_to=${toDate}`;
-    window.open(exportUrl, '_blank');
-    showToast('Export started! Check your downloads.', 'success');
-}
+        function updateTopProductsChart(productsData) {
+            try {
+                console.log('📊 updateTopProductsChart called with:', productsData);
 
-// Toast notification function
-function showToast(message, type = 'info') {
-    // Create toast element
-    const toast = document.createElement('div');
-    toast.className = `fixed top-4 right-4 z-50 px-4 py-3 rounded-lg shadow-lg text-white font-medium transition-all duration-300 transform translate-x-full`;
+                // ApexCharts is loaded globally, but double-check
+                if (typeof ApexCharts === 'undefined') {
+                    console.error('❌ ApexCharts not available');
+                    return;
+                }
 
-    // Set color based on type
-    switch(type) {
-        case 'success':
-            toast.classList.add('bg-green-500');
-            break;
-        case 'error':
-            toast.classList.add('bg-red-500');
-            break;
-        case 'warning':
-            toast.classList.add('bg-yellow-500');
-            break;
-        default:
-            toast.classList.add('bg-blue-500');
-    }
+                const chartContainer = document.getElementById('topProductsChart');
+                const placeholder = document.getElementById('topProductsPlaceholder');
 
-    toast.textContent = message;
-    document.body.appendChild(toast);
+                if (!chartContainer) {
+                    console.error('❌ Top products chart container not found');
+                    return;
+                }
 
-    // Animate in
-    setTimeout(() => {
-        toast.classList.remove('translate-x-full');
-    }, 100);
+                if (!placeholder) {
+                    console.error('❌ Top products chart placeholder not found');
+                    return;
+                }
 
-    // Remove after 3 seconds
-    setTimeout(() => {
-        toast.classList.add('translate-x-full');
-        setTimeout(() => {
-            document.body.removeChild(toast);
-        }, 300);
-    }, 3000);
-}
+                // Hide placeholder
+                placeholder.style.display = 'none';
 
-// Add new function to refresh low stock alerts
-async function refreshLowStockAlerts() {
-    console.log('🔄 Refreshing low stock alerts...');
-    
-    const tableBody = document.getElementById('lowStockTableBody');
-    if (!tableBody) {
-        console.error('❌ Low stock table body not found');
-        return;
-    }
-    
-    // Show loading state
-    tableBody.innerHTML = `
+                // Destroy existing chart
+                if (topProductsChart) {
+                    try {
+                        topProductsChart.destroy();
+                        topProductsChart = null;
+                        console.log('✅ Top products chart destroyed successfully');
+                    } catch (error) {
+                        console.error('❌ Error destroying top products chart:', error);
+                        topProductsChart = null; // Force reset even if destroy fails
+                    }
+                }
+
+                // Validate products data
+                if (!productsData.labels || !productsData.revenue) {
+                    console.error('❌ Invalid products data structure:', productsData);
+                    return;
+                }
+
+                if (productsData.labels.length === 0) {
+                    console.log('⚠️ No products data to display');
+                    return;
+                }
+
+                console.log('🔍 Top products chart will use:', productsData);
+
+                // Enhanced ApexCharts configuration for donut chart
+                const options = {
+                    series: productsData.revenue,
+                    chart: {
+                        type: 'donut',
+                        height: '100%',
+                        animations: {
+                            enabled: true,
+                            easing: 'easeinout',
+                            speed: 1000
+                        },
+                        background: 'transparent',
+                        fontFamily: 'Inter, system-ui, sans-serif',
+                        parentHeightOffset: 0
+                    },
+                    labels: productsData.labels,
+                    colors: [
+                        '#10b981', '#3b82f6', '#8b5cf6', '#f59e0b',
+                        '#ef4444', '#06b6d4', '#84cc16', '#f97316',
+                        '#ec4899', '#6366f1'
+                    ],
+                    plotOptions: {
+                        pie: {
+                            donut: {
+                                size: '70%',
+                                labels: {
+                                    show: true,
+                                    name: {
+                                        show: true,
+                                        fontSize: '13px',
+                                        fontWeight: 600,
+                                        color: '#374151',
+                                        offsetY: -8,
+                                        formatter: function (val) {
+                                            return val.length > 12 ? val.substring(0, 12) + '...' : val;
+                                        }
+                                    },
+                                    value: {
+                                        show: true,
+                                        fontSize: '14px',
+                                        fontWeight: 700,
+                                        color: '#1f2937',
+                                        offsetY: 8,
+                                        formatter: function (val) {
+                                            return formatMoney(parseInt(val));
+                                        }
+                                    },
+                                    total: {
+                                        show: true,
+                                        showAlways: true,
+                                        label: 'Total Revenue',
+                                        fontSize: '11px',
+                                        fontWeight: 500,
+                                        color: '#6b7280',
+                                        formatter: function (w) {
+                                            const total = w.globals.seriesTotals.reduce((a, b) => a + b, 0);
+                                            return formatMoney(total);
+                                        }
+                                    }
+                                }
+                            },
+                            expandOnClick: true
+                        }
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    legend: {
+                        position: 'bottom',
+                        horizontalAlign: 'center',
+                        fontSize: '10px',
+                        fontWeight: 500,
+                        markers: {
+                            width: 8,
+                            height: 8,
+                            radius: 4
+                        },
+                        itemMargin: {
+                            horizontal: 6,
+                            vertical: 2
+                        },
+                        formatter: function (seriesName, opts) {
+                            const value = opts.w.globals.series[opts.seriesIndex];
+                            const shortName = seriesName.length > 15 ? seriesName.substring(0, 15) + '...' : seriesName;
+                            return shortName + ': ' + formatMoney(value);
+                        }
+                    },
+                    tooltip: {
+                        theme: 'light',
+                        style: {
+                            fontSize: '12px'
+                        },
+                        y: {
+                            formatter: function (val) {
+                                return formatMoney(val, true);
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            filter: {
+                                type: 'lighten',
+                                value: 0.1
+                            }
+                        },
+                        active: {
+                            allowMultipleDataPointsSelection: false,
+                            filter: {
+                                type: 'darken',
+                                value: 0.1
+                            }
+                        }
+                    },
+                    responsive: [{
+                        breakpoint: 768,
+                        options: {
+                            legend: {
+                                position: 'bottom',
+                                fontSize: '9px',
+                                itemMargin: {
+                                    horizontal: 4,
+                                    vertical: 1
+                                }
+                            }
+                        }
+                    }]
+                };
+
+                // Create new chart
+                console.log('📊 Creating top products ApexCharts instance with options:', options);
+                topProductsChart = new ApexCharts(chartContainer, options);
+
+                console.log('📊 Rendering top products chart...');
+                topProductsChart.render().then(() => {
+                    console.log('✅ Top products chart rendered successfully');
+                }).catch((error) => {
+                    console.error('❌ Error rendering top products chart:', error);
+                    showToast('Error rendering top products chart: ' + error.message, 'error');
+                });
+
+                console.log('✅ Top products chart created successfully');
+
+            } catch (error) {
+                console.error('❌ Error creating top products chart:', error);
+
+                // Show placeholder if chart creation fails
+                const placeholder = document.getElementById('topProductsPlaceholder');
+                if (placeholder) {
+                    placeholder.style.display = 'flex';
+                }
+            }
+        }
+
+        function exportSalesData() {
+            const fromDate = document.getElementById('fromDate').value;
+            const toDate = document.getElementById('toDate').value;
+
+            if (!fromDate || !toDate) {
+                showToast('Please generate a report first before exporting', 'error');
+                return;
+            }
+
+            // Create export URL and trigger download
+            const exportUrl = `/api/orders/export?date_from=${fromDate}&date_to=${toDate}`;
+            window.open(exportUrl, '_blank');
+            showToast('Export started! Check your downloads.', 'success');
+        }
+
+        // Toast notification function
+        function showToast(message, type = 'info') {
+            // Create toast element
+            const toast = document.createElement('div');
+            toast.className = `fixed top-4 right-4 z-50 px-4 py-3 rounded-lg shadow-lg text-white font-medium transition-all duration-300 transform translate-x-full`;
+
+            // Set color based on type
+            switch (type) {
+                case 'success':
+                    toast.classList.add('bg-green-500');
+                    break;
+                case 'error':
+                    toast.classList.add('bg-red-500');
+                    break;
+                case 'warning':
+                    toast.classList.add('bg-yellow-500');
+                    break;
+                default:
+                    toast.classList.add('bg-blue-500');
+            }
+
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            // Animate in
+            setTimeout(() => {
+                toast.classList.remove('translate-x-full');
+            }, 100);
+
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 3000);
+        }
+
+        // Add new function to refresh low stock alerts
+        async function refreshLowStockAlerts() {
+            console.log('🔄 Refreshing low stock alerts...');
+
+            const tableBody = document.getElementById('lowStockTableBody');
+            if (!tableBody) {
+                console.error('❌ Low stock table body not found');
+                return;
+            }
+
+            // Show loading state
+            tableBody.innerHTML = `
         <tr>
             <td colspan="5" class="px-4 py-8 text-center">
                 <div class="flex flex-col items-center">
@@ -1464,33 +1494,33 @@ async function refreshLowStockAlerts() {
             </td>
         </tr>
     `;
-    
-    try {
-        const response = await fetch('/api/reports/inventory-reports', {
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        });
-        
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${await response.text()}`);
-        }
-        
-        const data = await response.json();
-        console.log('📦 Low stock data loaded:', data);
-        
-        if (!data.success) {
-            throw new Error('API returned error: ' + (data.error || 'Unknown error'));
-        }
-        
-        // Update low stock table
-        updateLowStockTable(data.data.low_stock_products || []);
-        
-    } catch (error) {
-        console.error('❌ Error loading low stock data:', error);
-        tableBody.innerHTML = `
+
+            try {
+                const response = await fetch('/api/reports/inventory-reports', {
+                    credentials: 'include',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+                }
+
+                const data = await response.json();
+                console.log('📦 Low stock data loaded:', data);
+
+                if (!data.success) {
+                    throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+                }
+
+                // Update low stock table
+                updateLowStockTable(data.data.low_stock_products || []);
+
+            } catch (error) {
+                console.error('❌ Error loading low stock data:', error);
+                tableBody.innerHTML = `
             <tr>
                 <td colspan="5" class="px-4 py-8 text-center">
                     <div class="flex flex-col items-center">
@@ -1503,16 +1533,16 @@ async function refreshLowStockAlerts() {
                 </td>
             </tr>
         `;
-    }
-}
+            }
+        }
 
-// Update low stock table
-function updateLowStockTable(lowStockProducts) {
-    const tableBody = document.getElementById('lowStockTableBody');
-    if (!tableBody) return;
-    
-    if (!lowStockProducts || lowStockProducts.length === 0) {
-        tableBody.innerHTML = `
+        // Update low stock table
+        function updateLowStockTable(lowStockProducts) {
+            const tableBody = document.getElementById('lowStockTableBody');
+            if (!tableBody) return;
+
+            if (!lowStockProducts || lowStockProducts.length === 0) {
+                tableBody.innerHTML = `
             <tr>
                 <td colspan="5" class="px-4 py-8 text-center">
                     <div class="flex flex-col items-center">
@@ -1525,17 +1555,17 @@ function updateLowStockTable(lowStockProducts) {
                 </td>
             </tr>
         `;
-        return;
-    }
-    
-    // Clear existing rows
-    tableBody.innerHTML = '';
-    
-    // Add rows for each low stock product
-    lowStockProducts.forEach(product => {
-        const row = document.createElement('tr');
-        row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-yellow-50 transition-all duration-200';
-        row.innerHTML = `
+                return;
+            }
+
+            // Clear existing rows
+            tableBody.innerHTML = '';
+
+            // Add rows for each low stock product
+            lowStockProducts.forEach(product => {
+                const row = document.createElement('tr');
+                row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-yellow-50 transition-all duration-200';
+                row.innerHTML = `
             <td class="px-4 py-3 whitespace-nowrap">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
@@ -1568,136 +1598,136 @@ function updateLowStockTable(lowStockProducts) {
                 </button>
             </td>
         `;
-        tableBody.appendChild(row);
-    });
-}
-
-// Initialize page
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('🚀 DOM Content Loaded - Initializing sales page');
-
-    // Check ApexCharts availability (loaded from base.html)
-    if (typeof ApexCharts !== 'undefined') {
-        console.log('✅ ApexCharts is available on page load');
-        console.log('📊 ApexCharts version:', ApexCharts.version || 'unknown');
-    } else {
-        console.error('❌ ApexCharts not available on page load - check base.html');
-        showToast('Chart library not loaded. Please refresh the page.', 'error');
-    }
-
-    // Check chart containers exist
-    const salesTrendContainer = document.getElementById('salesTrendChart');
-    const topProductsContainer = document.getElementById('topProductsChart');
-    const salesTrendPlaceholder = document.getElementById('salesTrendPlaceholder');
-    const topProductsPlaceholder = document.getElementById('topProductsPlaceholder');
-
-    console.log('📊 Chart containers check:', {
-        salesTrendContainer: !!salesTrendContainer,
-        topProductsContainer: !!topProductsContainer,
-        salesTrendPlaceholder: !!salesTrendPlaceholder,
-        topProductsPlaceholder: !!topProductsPlaceholder
-    });
-
-    // Check for URL parameters first
-    const urlParams = new URLSearchParams(window.location.search);
-    const fromDateParam = urlParams.get('from_date');
-    const toDateParam = urlParams.get('to_date');
-    const periodParam = urlParams.get('period');
-
-    const fromDateEl = document.getElementById('fromDate');
-    const toDateEl = document.getElementById('toDate');
-    const quickSelectEl = document.getElementById('quickSelect');
-
-    if (fromDateEl && toDateEl) {
-        if (fromDateParam && toDateParam) {
-            // Use URL parameters
-            fromDateEl.value = fromDateParam;
-            toDateEl.value = toDateParam;
-
-            // Set quick select based on period parameter
-            if (periodParam && quickSelectEl) {
-                switch(periodParam) {
-                    case 'daily':
-                        quickSelectEl.value = 'today';
-                        break;
-                    case 'weekly':
-                        quickSelectEl.value = 'week';
-                        break;
-                    case 'monthly':
-                        quickSelectEl.value = 'month';
-                        break;
-                    case 'yearly':
-                        quickSelectEl.value = 'year';
-                        break;
-                }
-            }
-
-            console.log('📅 URL dates set:', { from: fromDateParam, to: toDateParam, period: periodParam });
-        } else {
-            // Set default dates (last 7 days)
-            const today = new Date();
-            const weekAgo = new Date(today);
-            weekAgo.setDate(today.getDate() - 7);
-
-            fromDateEl.value = weekAgo.toISOString().split('T')[0];
-            toDateEl.value = today.toISOString().split('T')[0];
-            console.log('📅 Default dates set:', { from: fromDateEl.value, to: toDateEl.value });
+                tableBody.appendChild(row);
+            });
         }
 
-        // Load initial data with a small delay to ensure DOM is ready
-        setTimeout(() => {
-            console.log('⏳ Loading initial sales data...');
-            loadSalesData();
-        }, 100);
-    } else {
-        console.error('❌ Date input elements not found');
-    }
-});
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('🚀 DOM Content Loaded - Initializing sales page');
 
-// Quick select functionality
-document.getElementById('quickSelect').addEventListener('change', function() {
-    const value = this.value;
-    const today = new Date();
-    const fromDate = document.getElementById('fromDate');
-    const toDate = document.getElementById('toDate');
+            // Check ApexCharts availability (loaded from base.html)
+            if (typeof ApexCharts !== 'undefined') {
+                console.log('✅ ApexCharts is available on page load');
+                console.log('📊 ApexCharts version:', ApexCharts.version || 'unknown');
+            } else {
+                console.error('❌ ApexCharts not available on page load - check base.html');
+                showToast('Chart library not loaded. Please refresh the page.', 'error');
+            }
 
-    toDate.value = today.toISOString().split('T')[0];
+            // Check chart containers exist
+            const salesTrendContainer = document.getElementById('salesTrendChart');
+            const topProductsContainer = document.getElementById('topProductsChart');
+            const salesTrendPlaceholder = document.getElementById('salesTrendPlaceholder');
+            const topProductsPlaceholder = document.getElementById('topProductsPlaceholder');
 
-    switch(value) {
-        case 'today':
-            fromDate.value = today.toISOString().split('T')[0];
-            break;
-        case 'yesterday':
-            const yesterday = new Date(today);
-            yesterday.setDate(yesterday.getDate() - 1);
-            fromDate.value = yesterday.toISOString().split('T')[0];
-            toDate.value = yesterday.toISOString().split('T')[0];
-            break;
-        case 'week':
-            const weekStart = new Date(today);
-            weekStart.setDate(today.getDate() - today.getDay());
-            fromDate.value = weekStart.toISOString().split('T')[0];
-            break;
-        case 'month':
-            const monthStart = new Date(today.getFullYear(), today.getMonth(), 1);
-            fromDate.value = monthStart.toISOString().split('T')[0];
-            break;
-        case 'quarter':
-            const quarterStart = new Date(today.getFullYear(), Math.floor(today.getMonth() / 3) * 3, 1);
-            fromDate.value = quarterStart.toISOString().split('T')[0];
-            break;
-        case 'year':
-            const yearStart = new Date(today.getFullYear(), 0, 1);
-            fromDate.value = yearStart.toISOString().split('T')[0];
-            break;
-    }
+            console.log('📊 Chart containers check:', {
+                salesTrendContainer: !!salesTrendContainer,
+                topProductsContainer: !!topProductsContainer,
+                salesTrendPlaceholder: !!salesTrendPlaceholder,
+                topProductsPlaceholder: !!topProductsPlaceholder
+            });
 
-    // Auto-load data when quick select is used
-    if (value) {
-        console.log('📅 Quick select used, auto-generating report...');
-        setTimeout(loadSalesData, 100);
-    }
-});
-</script>
+            // Check for URL parameters first
+            const urlParams = new URLSearchParams(window.location.search);
+            const fromDateParam = urlParams.get('from_date');
+            const toDateParam = urlParams.get('to_date');
+            const periodParam = urlParams.get('period');
+
+            const fromDateEl = document.getElementById('fromDate');
+            const toDateEl = document.getElementById('toDate');
+            const quickSelectEl = document.getElementById('quickSelect');
+
+            if (fromDateEl && toDateEl) {
+                if (fromDateParam && toDateParam) {
+                    // Use URL parameters
+                    fromDateEl.value = fromDateParam;
+                    toDateEl.value = toDateParam;
+
+                    // Set quick select based on period parameter
+                    if (periodParam && quickSelectEl) {
+                        switch (periodParam) {
+                            case 'daily':
+                                quickSelectEl.value = 'today';
+                                break;
+                            case 'weekly':
+                                quickSelectEl.value = 'week';
+                                break;
+                            case 'monthly':
+                                quickSelectEl.value = 'month';
+                                break;
+                            case 'yearly':
+                                quickSelectEl.value = 'year';
+                                break;
+                        }
+                    }
+
+                    console.log('📅 URL dates set:', { from: fromDateParam, to: toDateParam, period: periodParam });
+                } else {
+                    // Set default dates (last 7 days)
+                    const today = new Date();
+                    const weekAgo = new Date(today);
+                    weekAgo.setDate(today.getDate() - 7);
+
+                    fromDateEl.value = weekAgo.toISOString().split('T')[0];
+                    toDateEl.value = today.toISOString().split('T')[0];
+                    console.log('📅 Default dates set:', { from: fromDateEl.value, to: toDateEl.value });
+                }
+
+                // Load initial data with a small delay to ensure DOM is ready
+                setTimeout(() => {
+                    console.log('⏳ Loading initial sales data...');
+                    loadSalesData();
+                }, 100);
+            } else {
+                console.error('❌ Date input elements not found');
+            }
+        });
+
+        // Quick select functionality
+        document.getElementById('quickSelect').addEventListener('change', function () {
+            const value = this.value;
+            const today = new Date();
+            const fromDate = document.getElementById('fromDate');
+            const toDate = document.getElementById('toDate');
+
+            toDate.value = today.toISOString().split('T')[0];
+
+            switch (value) {
+                case 'today':
+                    fromDate.value = today.toISOString().split('T')[0];
+                    break;
+                case 'yesterday':
+                    const yesterday = new Date(today);
+                    yesterday.setDate(yesterday.getDate() - 1);
+                    fromDate.value = yesterday.toISOString().split('T')[0];
+                    toDate.value = yesterday.toISOString().split('T')[0];
+                    break;
+                case 'week':
+                    const weekStart = new Date(today);
+                    weekStart.setDate(today.getDate() - today.getDay());
+                    fromDate.value = weekStart.toISOString().split('T')[0];
+                    break;
+                case 'month':
+                    const monthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+                    fromDate.value = monthStart.toISOString().split('T')[0];
+                    break;
+                case 'quarter':
+                    const quarterStart = new Date(today.getFullYear(), Math.floor(today.getMonth() / 3) * 3, 1);
+                    fromDate.value = quarterStart.toISOString().split('T')[0];
+                    break;
+                case 'year':
+                    const yearStart = new Date(today.getFullYear(), 0, 1);
+                    fromDate.value = yearStart.toISOString().split('T')[0];
+                    break;
+            }
+
+            // Auto-load data when quick select is used
+            if (value) {
+                console.log('📅 Quick select used, auto-generating report...');
+                setTimeout(loadSalesData, 100);
+            }
+        });
+    </script>
 </div>
 {% endblock %}

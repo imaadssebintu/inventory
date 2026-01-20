@@ -12,10 +12,12 @@
                 <p class="text-green-100 text-sm mt-1">Stock levels, movement, and inventory analytics</p>
             </div>
             <div class="flex space-x-2">
-                <a href="/reports" class="px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg text-white text-sm font-medium transition-all duration-200">
+                <a href="/reports"
+                    class="px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg text-white text-sm font-medium transition-all duration-200">
                     <i class="fas fa-arrow-left mr-2"></i>Back to Reports
                 </a>
-                <button onclick="testChart()" class="px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg text-white text-sm font-medium transition-all duration-200">
+                <button onclick="testChart()"
+                    class="px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg text-white text-sm font-medium transition-all duration-200">
                     <i class="fas fa-chart-bar mr-2"></i>Test Chart
                 </button>
             </div>
@@ -82,7 +84,8 @@
                 <i class="fas fa-layer-group text-blue-600 text-xl"></i>
             </div>
             <p class="text-sm text-gray-600 mb-4">Current stock quantities and inventory status</p>
-            <button onclick="generateStockReport()" class="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200">
+            <button onclick="generateStockReport()"
+                class="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200">
                 Generate Report
             </button>
         </div>
@@ -94,7 +97,8 @@
                 <i class="fas fa-exchange-alt text-green-600 text-xl"></i>
             </div>
             <p class="text-sm text-gray-600 mb-4">Inventory in/out movements and transactions</p>
-            <button onclick="generateMovementReport()" class="w-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors duration-200">
+            <button onclick="generateMovementReport()"
+                class="w-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors duration-200">
                 Generate Report
             </button>
         </div>
@@ -106,7 +110,8 @@
                 <i class="fas fa-calculator text-purple-600 text-xl"></i>
             </div>
             <p class="text-sm text-gray-600 mb-4">Total inventory value and cost analysis</p>
-            <button onclick="generateValuationReport()" class="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors duration-200">
+            <button onclick="generateValuationReport()"
+                class="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors duration-200">
                 Generate Report
             </button>
         </div>
@@ -116,7 +121,8 @@
     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mt-6 hidden" id="movementReportSection">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-lg font-semibold text-gray-900">Stock Movement Report</h3>
-            <button onclick="closeMovementReport()" class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
+            <button onclick="closeMovementReport()"
+                class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
                 <i class="fas fa-times mr-2"></i>Close
             </button>
         </div>
@@ -177,7 +183,8 @@
     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mt-6" id="lowStockAlertsSection">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-lg font-semibold text-gray-900">Low Stock Alerts</h3>
-            <button onclick="refreshAlerts()" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
+            <button onclick="refreshAlerts()"
+                class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
                 <i class="fas fa-sync mr-2"></i>Refresh
             </button>
         </div>
@@ -239,7 +246,8 @@
         <h3 class="text-lg font-semibold text-gray-900 mb-4">Inventory by Category</h3>
         <div class="h-72 relative">
             <div id="inventoryChart" class="w-full h-full"></div>
-            <div id="inventoryChartPlaceholder" class="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
+            <div id="inventoryChartPlaceholder"
+                class="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg">
                 <div class="text-center">
                     <i class="fas fa-spinner fa-spin text-gray-400 text-4xl mb-2"></i>
                     <p class="text-gray-500">Loading inventory chart...</p>
@@ -252,16 +260,17 @@
     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mt-6 hidden" id="valuationReportSection">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-lg font-semibold text-gray-900">Detailed Valuation Report</h3>
-            <button onclick="closeValuationReport()" class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
+            <button onclick="closeValuationReport()"
+                class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-lg text-sm font-medium transition-all duration-200">
                 <i class="fas fa-times mr-2"></i>Close
             </button>
         </div>
-        
+
         <!-- Valuation Summary Cards -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6" id="valuationSummaryCards">
             <!-- Summary cards will be populated by JavaScript -->
         </div>
-        
+
         <!-- Category Valuation Table -->
         <div class="mb-6">
             <h4 class="text-md font-semibold text-gray-900 mb-3 flex items-center">
@@ -271,31 +280,36 @@
                 <table class="min-w-full divide-y divide-gray-200">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-folder mr-1 text-gray-400"></i>
                                     Category
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-box mr-1 text-gray-400"></i>
                                     Products
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-tag mr-1 text-gray-400"></i>
                                     Retail Value
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-dollar-sign mr-1 text-gray-400"></i>
                                     Cost Value
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-chart-line mr-1 text-gray-400"></i>
                                     Profit Value
@@ -309,7 +323,7 @@
                 </table>
             </div>
         </div>
-        
+
         <!-- Product Valuation Table -->
         <div>
             <h4 class="text-md font-semibold text-gray-900 mb-3 flex items-center">
@@ -319,43 +333,50 @@
                 <table class="min-w-full divide-y divide-gray-200">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-box mr-1 text-gray-400"></i>
                                     Product
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-folder mr-1 text-gray-400"></i>
                                     Category
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-sort-numeric-up mr-1 text-gray-400"></i>
                                     Stock
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-tag mr-1 text-gray-400"></i>
                                     Retail Price
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-tags mr-1 text-gray-400"></i>
                                     Retail Value
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-dollar-sign mr-1 text-gray-400"></i>
                                     Cost Value
                                 </div>
                             </th>
-                            <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            <th
+                                class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                 <div class="flex items-center">
                                     <i class="fas fa-chart-line mr-1 text-gray-400"></i>
                                     Profit Value
@@ -374,172 +395,172 @@
 </div>
 
 <script>
-// Global variables
-let inventoryChart = null;
+    // Global variables
+    let inventoryChart = null;
 
-// Money formatting function
-function formatMoney(value, showFull = false) {
-    if (value === 0) return 'UGX 0';
+    // Money formatting function
+    function formatMoney(value, showFull = false) {
+        if (value === 0) return 'UGX 0';
 
-    const absValue = Math.abs(value);
-    const isNegative = value < 0;
-    const prefix = isNegative ? '-UGX ' : 'UGX ';
+        const absValue = Math.abs(value);
+        const isNegative = value < 0;
+        const prefix = isNegative ? '-UGX ' : 'UGX ';
 
-    if (showFull) {
-        return prefix + absValue.toLocaleString();
-    }
+        if (showFull) {
+            return prefix + absValue.toLocaleString();
+        }
 
-    if (absValue >= 1000000000) {
-        return prefix + (absValue / 1000000000).toFixed(1) + 'B';
-    } else if (absValue >= 1000000) {
-        return prefix + (absValue / 1000000).toFixed(1) + 'M';
-    } else if (absValue >= 1000) {
-        return prefix + (absValue / 1000).toFixed(1) + 'K';
-    } else {
-        return prefix + absValue.toLocaleString();
-    }
-}
-
-// Toast notification function
-function showToast(message, type = 'info') {
-    // Create toast element
-    const toast = document.createElement('div');
-    toast.className = `fixed top-4 right-4 z-50 px-4 py-2 rounded-lg text-white text-sm font-medium transition-all duration-300 transform translate-x-full`;
-
-    // Set color based on type
-    switch(type) {
-        case 'success':
-            toast.className += ' bg-green-600';
-            break;
-        case 'error':
-            toast.className += ' bg-red-600';
-            break;
-        case 'warning':
-            toast.className += ' bg-yellow-600';
-            break;
-        default:
-            toast.className += ' bg-blue-600';
-    }
-
-    toast.textContent = message;
-    document.body.appendChild(toast);
-
-    // Animate in
-    setTimeout(() => {
-        toast.classList.remove('translate-x-full');
-    }, 100);
-
-    // Remove after 3 seconds
-    setTimeout(() => {
-        toast.classList.add('translate-x-full');
-        setTimeout(() => {
-            document.body.removeChild(toast);
-        }, 300);
-    }, 3000);
-}
-
-// Load inventory data
-async function loadInventoryData() {
-    try {
-        console.log('📦 Loading inventory data...');
-
-        // Check if ApexCharts is available
-        if (typeof ApexCharts === 'undefined') {
-            console.error('❌ ApexCharts not available');
-            showToast('Chart library not loaded. Please refresh the page.', 'error');
+        if (absValue >= 1000000000) {
+            return prefix + (absValue / 1000000000).toFixed(1) + 'B';
+        } else if (absValue >= 1000000) {
+            return prefix + (absValue / 1000000).toFixed(1) + 'M';
+        } else if (absValue >= 1000) {
+            return prefix + (absValue / 1000).toFixed(1) + 'K';
         } else {
-            console.log('✅ ApexCharts is available');
+            return prefix + absValue.toLocaleString();
+        }
+    }
+
+    // Toast notification function
+    function showToast(message, type = 'info') {
+        // Create toast element
+        const toast = document.createElement('div');
+        toast.className = `fixed top-4 right-4 z-50 px-4 py-2 rounded-lg text-white text-sm font-medium transition-all duration-300 transform translate-x-full`;
+
+        // Set color based on type
+        switch (type) {
+            case 'success':
+                toast.className += ' bg-green-600';
+                break;
+            case 'error':
+                toast.className += ' bg-red-600';
+                break;
+            case 'warning':
+                toast.className += ' bg-yellow-600';
+                break;
+            default:
+                toast.className += ' bg-blue-600';
         }
 
-        const response = await fetch('/api/reports/inventory-reports', {
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+        toast.textContent = message;
+        document.body.appendChild(toast);
+
+        // Animate in
+        setTimeout(() => {
+            toast.classList.remove('translate-x-full');
+        }, 100);
+
+        // Remove after 3 seconds
+        setTimeout(() => {
+            toast.classList.add('translate-x-full');
+            setTimeout(() => {
+                document.body.removeChild(toast);
+            }, 300);
+        }, 3000);
+    }
+
+    // Load inventory data
+    async function loadInventoryData() {
+        try {
+            console.log('📦 Loading inventory data...');
+
+            // Check if ApexCharts is available
+            if (typeof ApexCharts === 'undefined') {
+                console.error('❌ ApexCharts not available');
+                showToast('Chart library not loaded. Please refresh the page.', 'error');
+            } else {
+                console.log('✅ ApexCharts is available');
             }
-        });
 
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+            const response = await fetch('/api/reports/inventory-reports', {
+                credentials: 'include',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+            }
+
+            const data = await response.json();
+            console.log('📦 Inventory data loaded:', data);
+
+            if (!data.success) {
+                throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+            }
+
+            console.log('📊 Category breakdown:', data.data.category_inventory);
+
+            // Update summary cards
+            updateSummaryCards(data.data);
+
+            // Update low stock table
+            updateLowStockTable(data.data.low_stock_products, []); // out_of_stock_products not in current API
+
+            // Update inventory chart
+            updateInventoryChart(data.data.category_inventory);
+
+            console.log('✅ Inventory data updated successfully');
+
+        } catch (error) {
+            console.error('❌ Error loading inventory data:', error);
+            showToast('Error loading inventory data: ' + error.message, 'error');
+        }
+    }
+
+    // Update summary cards
+    function updateSummaryCards(data) {
+        const totalProductsEl = document.getElementById('totalProducts');
+        const lowStockItemsEl = document.getElementById('lowStockItems');
+        const outOfStockEl = document.getElementById('outOfStock');
+        const totalValueEl = document.getElementById('totalValue');
+
+        // Extract data from the API response
+        const lowStockCount = data.low_stock_products ? data.low_stock_products.length : 0;
+        const totalValue = data.valuation ? data.valuation.total_retail_value : 0;
+        const productCount = data.valuation && data.valuation.products ? data.valuation.products.length : 0;
+
+        if (totalProductsEl) {
+            totalProductsEl.textContent = productCount.toLocaleString();
         }
 
-        const data = await response.json();
-        console.log('📦 Inventory data loaded:', data);
-        
-        if (!data.success) {
-            throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+        if (lowStockItemsEl) {
+            lowStockItemsEl.textContent = lowStockCount.toLocaleString();
         }
-        
-        console.log('📊 Category breakdown:', data.data.category_inventory);
 
-        // Update summary cards
-        updateSummaryCards(data.data);
+        if (outOfStockEl) {
+            outOfStockEl.textContent = '0'; // Not provided in current API
+        }
 
-        // Update low stock table
-        updateLowStockTable(data.data.low_stock_products, []); // out_of_stock_products not in current API
-
-        // Update inventory chart
-        updateInventoryChart(data.data.category_inventory);
-
-        console.log('✅ Inventory data updated successfully');
-
-    } catch (error) {
-        console.error('❌ Error loading inventory data:', error);
-        showToast('Error loading inventory data: ' + error.message, 'error');
-    }
-}
-
-// Update summary cards
-function updateSummaryCards(data) {
-    const totalProductsEl = document.getElementById('totalProducts');
-    const lowStockItemsEl = document.getElementById('lowStockItems');
-    const outOfStockEl = document.getElementById('outOfStock');
-    const totalValueEl = document.getElementById('totalValue');
-
-    // Extract data from the API response
-    const lowStockCount = data.low_stock_products ? data.low_stock_products.length : 0;
-    const totalValue = data.valuation ? data.valuation.total_retail_value : 0;
-    const productCount = data.valuation && data.valuation.products ? data.valuation.products.length : 0;
-
-    if (totalProductsEl) {
-        totalProductsEl.textContent = productCount.toLocaleString();
+        if (totalValueEl) {
+            totalValueEl.textContent = formatMoney(totalValue);
+        }
     }
 
-    if (lowStockItemsEl) {
-        lowStockItemsEl.textContent = lowStockCount.toLocaleString();
-    }
+    // Update low stock table
+    function updateLowStockTable(lowStockProducts, outOfStockProducts) {
+        const tableBody = document.getElementById('lowStockTableBody');
+        const noLowStockRow = document.getElementById('noLowStockRow');
 
-    if (outOfStockEl) {
-        outOfStockEl.textContent = '0'; // Not provided in current API
-    }
+        if (!tableBody) return;
 
-    if (totalValueEl) {
-        totalValueEl.textContent = formatMoney(totalValue);
-    }
-}
+        // Clear existing rows
+        tableBody.innerHTML = '';
 
-// Update low stock table
-function updateLowStockTable(lowStockProducts, outOfStockProducts) {
-    const tableBody = document.getElementById('lowStockTableBody');
-    const noLowStockRow = document.getElementById('noLowStockRow');
+        // Use only low stock products from the new API structure
+        const allAlerts = lowStockProducts.map(p => ({
+            ...p,
+            status: 'low',
+            id: p._id || '',
+            current_stock: p.stock_quantity || 0,
+            min_stock_level: 10, // Default minimum stock level
+            category: p.category_name || 'Uncategorized' // Use category_name from API
+        }));
 
-    if (!tableBody) return;
-
-    // Clear existing rows
-    tableBody.innerHTML = '';
-
-    // Use only low stock products from the new API structure
-    const allAlerts = lowStockProducts.map(p => ({
-        ...p, 
-        status: 'low',
-        id: p._id || '',
-        current_stock: p.stock_quantity || 0,
-        min_stock_level: 10, // Default minimum stock level
-        category: p.category_name || 'Uncategorized' // Use category_name from API
-    }));
-
-    if (allAlerts.length === 0) {
-        tableBody.innerHTML = `
+        if (allAlerts.length === 0) {
+            tableBody.innerHTML = `
             <tr>
                 <td colspan="5" class="px-4 py-8 text-center">
                     <div class="flex flex-col items-center">
@@ -552,18 +573,18 @@ function updateLowStockTable(lowStockProducts, outOfStockProducts) {
                 </td>
             </tr>
         `;
-        return;
-    }
+            return;
+        }
 
-    // Add rows for each alert
-    allAlerts.forEach(product => {
-        const statusClass = product.status === 'out' ? 'bg-red-100 text-red-800' : 'bg-yellow-100 text-yellow-800';
-        const statusText = product.status === 'out' ? 'Out of Stock' : 'Low Stock';
-        const statusIcon = product.status === 'out' ? 'fas fa-times-circle' : 'fas fa-exclamation-triangle';
+        // Add rows for each alert
+        allAlerts.forEach(product => {
+            const statusClass = product.status === 'out' ? 'bg-red-100 text-red-800' : 'bg-yellow-100 text-yellow-800';
+            const statusText = product.status === 'out' ? 'Out of Stock' : 'Low Stock';
+            const statusIcon = product.status === 'out' ? 'fas fa-times-circle' : 'fas fa-exclamation-triangle';
 
-        const row = document.createElement('tr');
-        row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-yellow-50 transition-all duration-200';
-        row.innerHTML = `
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-yellow-50 transition-all duration-200';
+            row.innerHTML = `
             <td class="px-4 py-3 whitespace-nowrap">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
@@ -596,201 +617,201 @@ function updateLowStockTable(lowStockProducts, outOfStockProducts) {
                 </button>
             </td>
         `;
-        tableBody.appendChild(row);
-    });
-}
-
-// Update inventory chart
-function updateInventoryChart(categoryData) {
-    console.log('📊 updateInventoryChart called with:', categoryData);
-
-    if (typeof ApexCharts === 'undefined') {
-        console.error('❌ ApexCharts not available');
-        showToast('Chart library not loaded', 'error');
-        return;
+            tableBody.appendChild(row);
+        });
     }
 
-    const chartContainer = document.getElementById('inventoryChart');
-    const placeholder = document.getElementById('inventoryChartPlaceholder');
+    // Update inventory chart
+    function updateInventoryChart(categoryData) {
+        console.log('📊 updateInventoryChart called with:', categoryData);
 
-    if (!chartContainer) {
-        console.error('❌ Chart container not found');
-        return;
-    }
+        if (typeof ApexCharts === 'undefined') {
+            console.error('❌ ApexCharts not available');
+            showToast('Chart library not loaded', 'error');
+            return;
+        }
 
-    if (!placeholder) {
-        console.error('❌ Chart placeholder not found');
-        return;
-    }
+        const chartContainer = document.getElementById('inventoryChart');
+        const placeholder = document.getElementById('inventoryChartPlaceholder');
 
-    console.log('📊 Chart elements found, proceeding...');
+        if (!chartContainer) {
+            console.error('❌ Chart container not found');
+            return;
+        }
 
-    // Destroy existing chart
-    if (inventoryChart) {
-        console.log('📊 Destroying existing chart');
-        inventoryChart.destroy();
-        inventoryChart = null;
-    }
+        if (!placeholder) {
+            console.error('❌ Chart placeholder not found');
+            return;
+        }
 
-    if (!categoryData || categoryData.length === 0) {
-        console.log('⚠️ No category data available');
-        placeholder.innerHTML = `
+        console.log('📊 Chart elements found, proceeding...');
+
+        // Destroy existing chart
+        if (inventoryChart) {
+            console.log('📊 Destroying existing chart');
+            inventoryChart.destroy();
+            inventoryChart = null;
+        }
+
+        if (!categoryData || categoryData.length === 0) {
+            console.log('⚠️ No category data available');
+            placeholder.innerHTML = `
             <div class="text-center">
                 <i class="fas fa-chart-bar text-gray-400 text-4xl mb-2"></i>
                 <p class="text-gray-500">No category data available</p>
             </div>
         `;
-        placeholder.style.display = 'flex';
-        return;
-    }
+            placeholder.style.display = 'flex';
+            return;
+        }
 
-    // Filter out null categories and prepare chart data
-    const validCategories = categoryData.filter(cat => cat._id && cat.total_value > 0);
-    console.log('📊 Valid categories for chart:', validCategories);
+        // Filter out null categories and prepare chart data
+        const validCategories = categoryData.filter(cat => cat._id && cat.total_value > 0);
+        console.log('📊 Valid categories for chart:', validCategories);
 
-    if (validCategories.length === 0) {
-        console.log('⚠️ No valid categories with values > 0');
-        placeholder.innerHTML = `
+        if (validCategories.length === 0) {
+            console.log('⚠️ No valid categories with values > 0');
+            placeholder.innerHTML = `
             <div class="text-center">
                 <i class="fas fa-chart-bar text-gray-400 text-4xl mb-2"></i>
                 <p class="text-gray-500">No category data with values available</p>
             </div>
         `;
-        placeholder.style.display = 'flex';
-        return;
-    }
+            placeholder.style.display = 'flex';
+            return;
+        }
 
-    // Hide placeholder
-    placeholder.style.display = 'none';
+        // Hide placeholder
+        placeholder.style.display = 'none';
 
-    // Prepare chart data
-    const categories = validCategories.map(cat => cat._id || 'Uncategorized');
-    const values = validCategories.map(cat => cat.total_value);
+        // Prepare chart data
+        const categories = validCategories.map(cat => cat._id || 'Uncategorized');
+        const values = validCategories.map(cat => cat.total_value);
 
-    console.log('📊 Chart data prepared:', { categories, values });
+        console.log('📊 Chart data prepared:', { categories, values });
 
-    const options = {
-        series: [{
-            name: 'Inventory Value',
-            data: values
-        }],
-        chart: {
-            type: 'bar',
-            height: '100%',
-            toolbar: {
-                show: false
-            },
-            background: 'transparent',
-            fontFamily: 'Inter, system-ui, sans-serif',
-            parentHeightOffset: 0
-        },
-        colors: ['#10b981'],
-        plotOptions: {
-            bar: {
-                borderRadius: 4,
-                horizontal: false,
-                columnWidth: '60%'
-            }
-        },
-        dataLabels: {
-            enabled: false
-        },
-        xaxis: {
-            categories: categories,
-            labels: {
-                style: {
-                    colors: '#6b7280',
-                    fontSize: '11px'
-                }
-            },
-            axisBorder: {
-                show: false
-            },
-            axisTicks: {
-                show: false
-            }
-        },
-        yaxis: {
-            title: {
-                text: 'Value',
-                style: {
-                    color: '#374151',
-                    fontSize: '12px',
-                    fontWeight: 600
-                }
-            },
-            labels: {
-                formatter: function (val) {
-                    return formatMoney(val).replace('UGX ', '');
+        const options = {
+            series: [{
+                name: 'Inventory Value',
+                data: values
+            }],
+            chart: {
+                type: 'bar',
+                height: '100%',
+                toolbar: {
+                    show: false
                 },
-                style: {
-                    colors: '#6b7280',
-                    fontSize: '11px'
+                background: 'transparent',
+                fontFamily: 'Inter, system-ui, sans-serif',
+                parentHeightOffset: 0
+            },
+            colors: ['#10b981'],
+            plotOptions: {
+                bar: {
+                    borderRadius: 4,
+                    horizontal: false,
+                    columnWidth: '60%'
                 }
             },
-            axisBorder: {
-                show: false
-            },
-            axisTicks: {
-                show: false
-            }
-        },
-        tooltip: {
-            theme: 'light',
-            y: {
-                formatter: function (val) {
-                    return formatMoney(val, true);
-                }
-            }
-        },
-        grid: {
-            show: true,
-            borderColor: '#f3f4f6',
-            strokeDashArray: 2,
-            yaxis: {
-                lines: {
-                    show: true
-                }
+            dataLabels: {
+                enabled: false
             },
             xaxis: {
-                lines: {
+                categories: categories,
+                labels: {
+                    style: {
+                        colors: '#6b7280',
+                        fontSize: '11px'
+                    }
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
                     show: false
                 }
             },
-            padding: {
-                top: 0,
-                right: 15,
-                bottom: 5,
-                left: 5
+            yaxis: {
+                title: {
+                    text: 'Value',
+                    style: {
+                        color: '#374151',
+                        fontSize: '12px',
+                        fontWeight: 600
+                    }
+                },
+                labels: {
+                    formatter: function (val) {
+                        return formatMoney(val).replace('UGX ', '');
+                    },
+                    style: {
+                        colors: '#6b7280',
+                        fontSize: '11px'
+                    }
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                }
+            },
+            tooltip: {
+                theme: 'light',
+                y: {
+                    formatter: function (val) {
+                        return formatMoney(val, true);
+                    }
+                }
+            },
+            grid: {
+                show: true,
+                borderColor: '#f3f4f6',
+                strokeDashArray: 2,
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                },
+                xaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                padding: {
+                    top: 0,
+                    right: 15,
+                    bottom: 5,
+                    left: 5
+                }
             }
+        };
+
+        console.log('📊 Creating ApexCharts instance with options:', options);
+
+        try {
+            inventoryChart = new ApexCharts(chartContainer, options);
+            console.log('📊 ApexCharts instance created, rendering...');
+
+            inventoryChart.render().then(() => {
+                console.log('✅ Inventory chart rendered successfully');
+            }).catch((error) => {
+                console.error('❌ Error rendering inventory chart:', error);
+                showToast('Error rendering chart: ' + error.message, 'error');
+            });
+        } catch (error) {
+            console.error('❌ Error creating inventory chart:', error);
+            showToast('Error creating chart: ' + error.message, 'error');
         }
-    };
-
-    console.log('📊 Creating ApexCharts instance with options:', options);
-
-    try {
-        inventoryChart = new ApexCharts(chartContainer, options);
-        console.log('📊 ApexCharts instance created, rendering...');
-
-        inventoryChart.render().then(() => {
-            console.log('✅ Inventory chart rendered successfully');
-        }).catch((error) => {
-            console.error('❌ Error rendering inventory chart:', error);
-            showToast('Error rendering chart: ' + error.message, 'error');
-        });
-    } catch (error) {
-        console.error('❌ Error creating inventory chart:', error);
-        showToast('Error creating chart: ' + error.message, 'error');
     }
-}
 
-// Update movement table
-function updateMovementTable(movementData) {
-    const tableBody = document.getElementById('movementTableBody');
-    if (!tableBody) return;
+    // Update movement table
+    function updateMovementTable(movementData) {
+        const tableBody = document.getElementById('movementTableBody');
+        if (!tableBody) return;
 
-    if (!movementData || movementData.length === 0) {
-        tableBody.innerHTML = `
+        if (!movementData || movementData.length === 0) {
+            tableBody.innerHTML = `
             <tr>
                 <td colspan="5" class="px-4 py-8 text-center">
                     <div class="flex flex-col items-center">
@@ -803,25 +824,25 @@ function updateMovementTable(movementData) {
                 </td>
             </tr>
         `;
-        return;
-    }
+            return;
+        }
 
-    // Clear existing rows
-    tableBody.innerHTML = '';
+        // Clear existing rows
+        tableBody.innerHTML = '';
 
-    // Add rows for each movement
-    movementData.forEach(movement => {
-        const row = document.createElement('tr');
-        row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50 transition-all duration-200';
-        
-        // Determine movement type and styling
-        const isIncoming = movement.quantity > 0;
-        const typeClass = isIncoming ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
-        const typeIcon = isIncoming ? 'fas fa-arrow-down' : 'fas fa-arrow-up';
-        const typeText = isIncoming ? 'Stock In' : 'Stock Out';
-        const quantity = Math.abs(movement.quantity);
-        
-        row.innerHTML = `
+        // Add rows for each movement
+        movementData.forEach(movement => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50 transition-all duration-200';
+
+            // Determine movement type and styling
+            const isIncoming = movement.quantity > 0;
+            const typeClass = isIncoming ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
+            const typeIcon = isIncoming ? 'fas fa-arrow-down' : 'fas fa-arrow-up';
+            const typeText = isIncoming ? 'Stock In' : 'Stock Out';
+            const quantity = Math.abs(movement.quantity);
+
+            row.innerHTML = `
             <td class="px-4 py-3 whitespace-nowrap">
                 <div class="text-sm text-gray-900 font-medium">${movement.date || 'N/A'}</div>
             </td>
@@ -849,103 +870,103 @@ function updateMovementTable(movementData) {
                 <div class="text-sm text-gray-900">${movement.user || 'System'}</div>
             </td>
         `;
-        tableBody.appendChild(row);
-    });
-}
-
-// Report generation functions
-function generateStockReport() {
-    // For Stock Levels report, we want to show only Low Stock Alerts and Inventory by Category
-    // Hide other report sections
-    const movementSection = document.getElementById('movementReportSection');
-    const valuationSection = document.getElementById('valuationReportSection');
-    const lowStockSection = document.getElementById('lowStockAlertsSection');
-    const inventoryChartSection = document.getElementById('inventoryByCategorySection');
-    
-    if (movementSection) {
-        movementSection.classList.add('hidden');
-    }
-    
-    if (valuationSection) {
-        valuationSection.classList.add('hidden');
-    }
-    
-    // Show the Low Stock Alerts and Inventory by Category sections
-    if (lowStockSection) {
-        lowStockSection.classList.remove('hidden');
-    }
-    
-    if (inventoryChartSection) {
-        inventoryChartSection.classList.remove('hidden');
-    }
-    
-    showToast('Stock levels report displayed', 'success');
-}
-
-async function generateMovementReport() {
-    // For Stock Movement report, we want to show only the movement data
-    // Hide all other sections
-    const valuationSection = document.getElementById('valuationReportSection');
-    const lowStockSection = document.getElementById('lowStockAlertsSection');
-    const inventoryChartSection = document.getElementById('inventoryByCategorySection');
-    
-    if (valuationSection) {
-        valuationSection.classList.add('hidden');
-    }
-    
-    if (lowStockSection) {
-        lowStockSection.classList.add('hidden');
-    }
-    
-    if (inventoryChartSection) {
-        inventoryChartSection.classList.add('hidden');
-    }
-    
-    // Show the movement report section
-    const movementSection = document.getElementById('movementReportSection');
-    if (movementSection) {
-        movementSection.classList.remove('hidden');
-    }
-    
-    // Scroll to the movement report section
-    movementSection.scrollIntoView({ behavior: 'smooth' });
-    
-    const tableBody = document.getElementById('movementTableBody');
-    
-    try {
-        console.log('📊 Loading stock movement data...');
-
-        const response = await fetch('/api/reports/stock-movement?days=30', {
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
+            tableBody.appendChild(row);
         });
+    }
 
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+    // Report generation functions
+    function generateStockReport() {
+        // For Stock Levels report, we want to show only Low Stock Alerts and Inventory by Category
+        // Hide other report sections
+        const movementSection = document.getElementById('movementReportSection');
+        const valuationSection = document.getElementById('valuationReportSection');
+        const lowStockSection = document.getElementById('lowStockAlertsSection');
+        const inventoryChartSection = document.getElementById('inventoryByCategorySection');
+
+        if (movementSection) {
+            movementSection.classList.add('hidden');
         }
 
-        const data = await response.json();
-        console.log('📊 Stock movement data loaded:', data);
-
-        if (!data.success) {
-            throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+        if (valuationSection) {
+            valuationSection.classList.add('hidden');
         }
 
-        // Update movement table
-        updateMovementTable(data.data);
+        // Show the Low Stock Alerts and Inventory by Category sections
+        if (lowStockSection) {
+            lowStockSection.classList.remove('hidden');
+        }
 
-        showToast('Stock movement report generated successfully!', 'success');
+        if (inventoryChartSection) {
+            inventoryChartSection.classList.remove('hidden');
+        }
 
-    } catch (error) {
-        console.error('❌ Error generating movement report:', error);
-        showToast('Error generating movement report: ' + error.message, 'error');
-        
-        // Show error in table
-        if (tableBody) {
-            tableBody.innerHTML = `
+        showToast('Stock levels report displayed', 'success');
+    }
+
+    async function generateMovementReport() {
+        // For Stock Movement report, we want to show only the movement data
+        // Hide all other sections
+        const valuationSection = document.getElementById('valuationReportSection');
+        const lowStockSection = document.getElementById('lowStockAlertsSection');
+        const inventoryChartSection = document.getElementById('inventoryByCategorySection');
+
+        if (valuationSection) {
+            valuationSection.classList.add('hidden');
+        }
+
+        if (lowStockSection) {
+            lowStockSection.classList.add('hidden');
+        }
+
+        if (inventoryChartSection) {
+            inventoryChartSection.classList.add('hidden');
+        }
+
+        // Show the movement report section
+        const movementSection = document.getElementById('movementReportSection');
+        if (movementSection) {
+            movementSection.classList.remove('hidden');
+        }
+
+        // Scroll to the movement report section
+        movementSection.scrollIntoView({ behavior: 'smooth' });
+
+        const tableBody = document.getElementById('movementTableBody');
+
+        try {
+            console.log('📊 Loading stock movement data...');
+
+            const response = await fetch('/api/reports/stock-movement?days=30', {
+                credentials: 'include',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+            }
+
+            const data = await response.json();
+            console.log('📊 Stock movement data loaded:', data);
+
+            if (!data.success) {
+                throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+            }
+
+            // Update movement table
+            updateMovementTable(data.data);
+
+            showToast('Stock movement report generated successfully!', 'success');
+
+        } catch (error) {
+            console.error('❌ Error generating movement report:', error);
+            showToast('Error generating movement report: ' + error.message, 'error');
+
+            // Show error in table
+            if (tableBody) {
+                tableBody.innerHTML = `
                 <tr>
                     <td colspan="5" class="px-4 py-8 text-center">
                         <div class="flex flex-col items-center">
@@ -958,79 +979,79 @@ async function generateMovementReport() {
                     </td>
                 </tr>
             `;
+            }
         }
     }
-}
 
-function closeMovementReport() {
-    const movementSection = document.getElementById('movementReportSection');
-    if (movementSection) {
-        movementSection.classList.add('hidden');
-    }
-    
-    // Show the Low Stock Alerts and Inventory by Category sections again
-    const lowStockSection = document.getElementById('lowStockAlertsSection');
-    const inventoryChartSection = document.getElementById('inventoryByCategorySection');
-    
-    if (lowStockSection) {
-        lowStockSection.classList.remove('hidden');
-    }
-    
-    if (inventoryChartSection) {
-        inventoryChartSection.classList.remove('hidden');
-    }
-}
+    function closeMovementReport() {
+        const movementSection = document.getElementById('movementReportSection');
+        if (movementSection) {
+            movementSection.classList.add('hidden');
+        }
 
-function generateValuationReport() {
-    // For Inventory Valuation report, we want to show Detailed Valuation Report and Product Valuation Details
-    // Hide all other sections
-    const movementSection = document.getElementById('movementReportSection');
-    const lowStockSection = document.getElementById('lowStockAlertsSection');
-    const inventoryChartSection = document.getElementById('inventoryByCategorySection');
-    
-    if (movementSection) {
-        movementSection.classList.add('hidden');
-    }
-    
-    if (lowStockSection) {
-        lowStockSection.classList.add('hidden');
-    }
-    
-    if (inventoryChartSection) {
-        inventoryChartSection.classList.add('hidden');
-    }
-    
-    // Show the valuation report section
-    showValuationReport();
-}
+        // Show the Low Stock Alerts and Inventory by Category sections again
+        const lowStockSection = document.getElementById('lowStockAlertsSection');
+        const inventoryChartSection = document.getElementById('inventoryByCategorySection');
 
-async function showValuationReport() {
-    try {
+        if (lowStockSection) {
+            lowStockSection.classList.remove('hidden');
+        }
+
+        if (inventoryChartSection) {
+            inventoryChartSection.classList.remove('hidden');
+        }
+    }
+
+    function generateValuationReport() {
+        // For Inventory Valuation report, we want to show Detailed Valuation Report and Product Valuation Details
+        // Hide all other sections
+        const movementSection = document.getElementById('movementReportSection');
+        const lowStockSection = document.getElementById('lowStockAlertsSection');
+        const inventoryChartSection = document.getElementById('inventoryByCategorySection');
+
+        if (movementSection) {
+            movementSection.classList.add('hidden');
+        }
+
+        if (lowStockSection) {
+            lowStockSection.classList.add('hidden');
+        }
+
+        if (inventoryChartSection) {
+            inventoryChartSection.classList.add('hidden');
+        }
+
         // Show the valuation report section
-        const valuationSection = document.getElementById('valuationReportSection');
-        if (valuationSection) {
-            valuationSection.classList.remove('hidden');
-            
-            // Scroll to the valuation report section
-            valuationSection.scrollIntoView({ behavior: 'smooth' });
-        }
-        
-        // Show loading state
-        const summaryCards = document.getElementById('valuationSummaryCards');
-        const categoryTableBody = document.getElementById('categoryValuationTableBody');
-        const productTableBody = document.getElementById('productValuationTableBody');
-        
-        if (summaryCards) {
-            summaryCards.innerHTML = `
+        showValuationReport();
+    }
+
+    async function showValuationReport() {
+        try {
+            // Show the valuation report section
+            const valuationSection = document.getElementById('valuationReportSection');
+            if (valuationSection) {
+                valuationSection.classList.remove('hidden');
+
+                // Scroll to the valuation report section
+                valuationSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Show loading state
+            const summaryCards = document.getElementById('valuationSummaryCards');
+            const categoryTableBody = document.getElementById('categoryValuationTableBody');
+            const productTableBody = document.getElementById('productValuationTableBody');
+
+            if (summaryCards) {
+                summaryCards.innerHTML = `
                 <div class="col-span-4 text-center py-8">
                     <i class="fas fa-spinner fa-spin text-2xl text-gray-400"></i>
                     <p class="text-gray-600 mt-2">Loading valuation report...</p>
                 </div>
             `;
-        }
-        
-        if (categoryTableBody) {
-            categoryTableBody.innerHTML = `
+            }
+
+            if (categoryTableBody) {
+                categoryTableBody.innerHTML = `
                 <tr>
                     <td colspan="5" class="px-4 py-8 text-center">
                         <i class="fas fa-spinner fa-spin text-gray-400"></i>
@@ -1038,10 +1059,10 @@ async function showValuationReport() {
                     </td>
                 </tr>
             `;
-        }
-        
-        if (productTableBody) {
-            productTableBody.innerHTML = `
+            }
+
+            if (productTableBody) {
+                productTableBody.innerHTML = `
                 <tr>
                     <td colspan="7" class="px-4 py-8 text-center">
                         <i class="fas fa-spinner fa-spin text-gray-400"></i>
@@ -1049,56 +1070,56 @@ async function showValuationReport() {
                     </td>
                 </tr>
             `;
-        }
-        
-        const response = await fetch('/api/reports/valuation-report', {
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
             }
-        });
 
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${await response.text()}`);
-        }
+            const response = await fetch('/api/reports/valuation-report', {
+                credentials: 'include',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
 
-        const data = await response.json();
-        console.log('📊 Valuation report data loaded:', data);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+            }
 
-        if (!data.success) {
-            throw new Error('API returned error: ' + (data.error || 'Unknown error'));
-        }
+            const data = await response.json();
+            console.log('📊 Valuation report data loaded:', data);
 
-        // Display the valuation report data
-        displayValuationReport(data.data);
-        
-        showToast('Valuation report generated successfully!', 'success');
-    } catch (error) {
-        console.error('❌ Error generating valuation report:', error);
-        showToast('Error generating valuation report: ' + error.message, 'error');
-        
-        // Show error in the section
-        const summaryCards = document.getElementById('valuationSummaryCards');
-        if (summaryCards) {
-            summaryCards.innerHTML = `
+            if (!data.success) {
+                throw new Error('API returned error: ' + (data.error || 'Unknown error'));
+            }
+
+            // Display the valuation report data
+            displayValuationReport(data.data);
+
+            showToast('Valuation report generated successfully!', 'success');
+        } catch (error) {
+            console.error('❌ Error generating valuation report:', error);
+            showToast('Error generating valuation report: ' + error.message, 'error');
+
+            // Show error in the section
+            const summaryCards = document.getElementById('valuationSummaryCards');
+            if (summaryCards) {
+                summaryCards.innerHTML = `
                 <div class="col-span-4 text-center py-8">
                     <i class="fas fa-exclamation-circle text-2xl text-red-500"></i>
                     <p class="text-red-600 mt-2">Error loading valuation report</p>
                     <p class="text-gray-500 text-sm mt-1">${error.message}</p>
                 </div>
             `;
+            }
         }
     }
-}
 
-// Function to display valuation report data
-function displayValuationReport(valuationData) {
-    // Update summary cards
-    const summaryCards = document.getElementById('valuationSummaryCards');
-    if (summaryCards && valuationData.summary) {
-        const summary = valuationData.summary;
-        summaryCards.innerHTML = `
+    // Function to display valuation report data
+    function displayValuationReport(valuationData) {
+        // Update summary cards
+        const summaryCards = document.getElementById('valuationSummaryCards');
+        if (summaryCards && valuationData.summary) {
+            const summary = valuationData.summary;
+            summaryCards.innerHTML = `
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
                 <div class="flex items-center">
                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
@@ -1147,13 +1168,13 @@ function displayValuationReport(valuationData) {
                 </div>
             </div>
         `;
-    }
-    
-    // Update category valuation table
-    const categoryTableBody = document.getElementById('categoryValuationTableBody');
-    if (categoryTableBody && valuationData.by_category) {
-        if (valuationData.by_category.length === 0) {
-            categoryTableBody.innerHTML = `
+        }
+
+        // Update category valuation table
+        const categoryTableBody = document.getElementById('categoryValuationTableBody');
+        if (categoryTableBody && valuationData.by_category) {
+            if (valuationData.by_category.length === 0) {
+                categoryTableBody.innerHTML = `
                 <tr>
                     <td colspan="5" class="px-4 py-8 text-center text-gray-500">
                         <i class="fas fa-inbox text-gray-300 text-2xl mb-2"></i>
@@ -1161,8 +1182,8 @@ function displayValuationReport(valuationData) {
                     </td>
                 </tr>
             `;
-        } else {
-            categoryTableBody.innerHTML = valuationData.by_category.map(category => `
+            } else {
+                categoryTableBody.innerHTML = valuationData.by_category.map(category => `
                 <tr class="hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50 transition-all duration-200">
                     <td class="px-4 py-3 whitespace-nowrap">
                         <div class="flex items-center">
@@ -1182,14 +1203,14 @@ function displayValuationReport(valuationData) {
                     <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-purple-600">${formatMoney(category.profit_value)}</td>
                 </tr>
             `).join('');
+            }
         }
-    }
-    
-    // Update product valuation table
-    const productTableBody = document.getElementById('productValuationTableBody');
-    if (productTableBody && valuationData.products) {
-        if (valuationData.products.length === 0) {
-            productTableBody.innerHTML = `
+
+        // Update product valuation table
+        const productTableBody = document.getElementById('productValuationTableBody');
+        if (productTableBody && valuationData.products) {
+            if (valuationData.products.length === 0) {
+                productTableBody.innerHTML = `
                 <tr>
                     <td colspan="7" class="px-4 py-8 text-center text-gray-500">
                         <i class="fas fa-inbox text-gray-300 text-2xl mb-2"></i>
@@ -1197,13 +1218,13 @@ function displayValuationReport(valuationData) {
                     </td>
                 </tr>
             `;
-        } else {
-            // Sort products by retail value (highest first) and limit to top 50 for performance
-            const sortedProducts = [...valuationData.products]
-                .sort((a, b) => b.retail_value - a.retail_value)
-                .slice(0, 50);
-                
-            productTableBody.innerHTML = sortedProducts.map(product => `
+            } else {
+                // Sort products by retail value (highest first) and limit to top 50 for performance
+                const sortedProducts = [...valuationData.products]
+                    .sort((a, b) => b.retail_value - a.retail_value)
+                    .slice(0, 50);
+
+                productTableBody.innerHTML = sortedProducts.map(product => `
                 <tr class="hover:bg-gradient-to-r hover:from-gray-50 hover:to-green-50 transition-all duration-200">
                     <td class="px-4 py-3 whitespace-nowrap">
                         <div class="flex items-center">
@@ -1231,69 +1252,69 @@ function displayValuationReport(valuationData) {
                     <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-purple-600">${formatMoney(product.profit_value)}</td>
                 </tr>
             `).join('');
+            }
         }
     }
-}
 
-function closeValuationReport() {
-    const valuationSection = document.getElementById('valuationReportSection');
-    if (valuationSection) {
-        valuationSection.classList.add('hidden');
-    }
-    
-    // Show the Low Stock Alerts and Inventory by Category sections again
-    const lowStockSection = document.getElementById('lowStockAlertsSection');
-    const inventoryChartSection = document.getElementById('inventoryByCategorySection');
-    
-    if (lowStockSection) {
-        lowStockSection.classList.remove('hidden');
-    }
-    
-    if (inventoryChartSection) {
-        inventoryChartSection.classList.remove('hidden');
-    }
-}
+    function closeValuationReport() {
+        const valuationSection = document.getElementById('valuationReportSection');
+        if (valuationSection) {
+            valuationSection.classList.add('hidden');
+        }
 
-function refreshAlerts() {
-    showToast('Refreshing inventory data...', 'info');
-    loadInventoryData();
-}
+        // Show the Low Stock Alerts and Inventory by Category sections again
+        const lowStockSection = document.getElementById('lowStockAlertsSection');
+        const inventoryChartSection = document.getElementById('inventoryByCategorySection');
 
-function restockProduct(productId) {
-    showToast('Redirecting to product restock...', 'info');
-    // TODO: Implement restock functionality or redirect to product page
-    window.location.href = `/products?highlight=${productId}`;
-}
+        if (lowStockSection) {
+            lowStockSection.classList.remove('hidden');
+        }
 
-// Test chart function
-function testChart() {
-    console.log('🧪 Testing chart with sample data...');
-
-    if (typeof ApexCharts === 'undefined') {
-        alert('❌ ApexCharts not loaded');
-        return;
+        if (inventoryChartSection) {
+            inventoryChartSection.classList.remove('hidden');
+        }
     }
 
-    const sampleData = [
-        { category: 'Electronics', total_value: 18388800 },
-        { category: 'Perfume', total_value: 12810000 },
-        { category: 'Books', total_value: 6802875 },
-        { category: 'Clothing', total_value: 440000 }
-    ];
-
-    console.log('📊 Testing with sample data:', sampleData);
-    updateInventoryChart(sampleData);
-    showToast('Test chart created!', 'success');
-}
-
-// Initialize page
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('📦 Inventory Reports page loaded');
-
-    // Load initial data
-    setTimeout(() => {
+    function refreshAlerts() {
+        showToast('Refreshing inventory data...', 'info');
         loadInventoryData();
-    }, 100);
-});
+    }
+
+    function restockProduct(productId) {
+        showToast('Redirecting to product restock...', 'info');
+        // TODO: Implement restock functionality or redirect to product page
+        window.location.href = `/products?highlight=${productId}`;
+    }
+
+    // Test chart function
+    function testChart() {
+        console.log('🧪 Testing chart with sample data...');
+
+        if (typeof ApexCharts === 'undefined') {
+            alert('❌ ApexCharts not loaded');
+            return;
+        }
+
+        const sampleData = [
+            { category: 'Electronics', total_value: 18388800 },
+            { category: 'Perfume', total_value: 12810000 },
+            { category: 'Books', total_value: 6802875 },
+            { category: 'Clothing', total_value: 440000 }
+        ];
+
+        console.log('📊 Testing with sample data:', sampleData);
+        updateInventoryChart(sampleData);
+        showToast('Test chart created!', 'success');
+    }
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('📦 Inventory Reports page loaded');
+
+        // Load initial data
+        setTimeout(() => {
+            loadInventoryData();
+        }, 100);
+    });
 </script>
 {% endblock %}
